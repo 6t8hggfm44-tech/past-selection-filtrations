@@ -18,6 +18,14 @@ Maintain an adversarial, cumulative scientific assessment of PSF rather than mer
 12. If the canonical state changes, update `PSF_RESEARCH_STATE.md` and record the reason in the decision log.
 13. Report to the user what changed, what did not, confidence, and the recommended next action.
 
+## Novelty-preservation invariant
+- Do not weaken, conventionalize, remove, or reinterpret a distinctive PSF claim merely because a more standard formulation is available.
+- Modify a distinctive claim only when specific mathematical, physical, or prior-art evidence warrants the change.
+- When correction is necessary, preserve the strongest surviving formulation rather than collapsing it to the nearest conventional result.
+- Record the original claim, the evidence requiring revision, and the strongest surviving version in the appropriate ledger or decision log.
+- Treat unfamiliarity, lack of precedent, reviewer conservatism, or model preference for standard formulations as reasons for additional scrutiny, not as evidence against the claim.
+- Adversarial testing targets correctness and scope; it must not optimize the research program toward conventionality.
+
 ## Scientific hygiene
 - Never claim novelty from failure to find prior art.
 - Never treat a model-generated derivation as verified merely because it is internally fluent.
