@@ -14,6 +14,23 @@ This file records changes that affect claims, priorities, interpretation, or pub
 **Reason:** The base framework reorganizes standard quantum structure and is not by itself asserted to violate unitary evolution; distinctive physics requires additional content.  
 **Consequence:** A negative result—showing a candidate effect is reproduced by ordinary QM—is valuable and must be recorded.
 
+## D-2026-003 — Narrow N1 novelty assessment to the temporal-filtration synthesis
+**Date:** 2026-08-10  
+**Previous position:** N1, the PSF synthesis of an accessible past using record algebras with quantitative record/coherence analysis, was assessed at **Medium-high** confidence in substantive novelty with **Medium** prior-art threat.  
+**New position:** Assess N1 at **Medium** confidence with **Medium-high** prior-art threat. Do not claim standalone novelty for the broad ideas that an objective/accessibly classical past is constituted by redundant records, or that classically accessible/objective information may be represented by an operator-algebraic substructure. The still-live novelty question is narrower: whether PSF's particular ordered temporal record-filtration, compatible realization of past alternatives, expected-lift layer, and quantitative visibility/access synthesis is materially distinct from prior constructions.  
+**Evidence/reason:** Riedel, Zurek and Zwolak (2013) is direct conceptual prior art for an objective past characterized by redundant locally accessible records of histories. Girard, Cheng and Cao (2026) provides a close operator-algebraic accessibility/objectivity formulation using recoverable logical von Neumann subalgebras and their centers. The latter postdates the November 2025 PSF preprint, so it is evidence of substantive overlap/convergence, not by itself evidence that PSF lacked priority. No source found in this run duplicated the full temporal-filtration-plus-visibility synthesis.  
+**Affected claims/files:** `PSF_RESEARCH_STATE.md` N1; `literature/LEDGER.md`; `red-team/LOG.md` RT-2026-001.  
+**Reversible if:** a priority-aware theorem/definition audit either uncovers pre-PSF mathematical equivalence (requiring further narrowing) or establishes a sharper structural distinction than presently documented (supporting restoration of confidence).
+
+## D-2026-004 — Selector echo is a conditional discriminator, not base-PSF empirical content
+**Date:** 2026-08-10  
+**Previous position:** P1 required formalizing a candidate additional axiom and deriving an observable consequence; the current manuscript already labeled the selector law as optional new physics but the persistent research state had not yet reduced it to a compact prospective test relation.  
+**New position:** Use the optional selector relation as the current P1 reference discriminator: with `Σ=-log V_pre` and selector overlap `exp(-ηΣ)`, an ideal inverse of all ordinary non-selector branch degrees gives the conditional prediction `ν_echo=V_pre^η`. Standard unitary QM and the base PSF framework predict complete restoration under a genuinely global exact inverse. This relation must never be reported as a prediction of base PSF.  
+**Evidence/reason:** Direct algebraic substitution plus a finite-dimensional reversible-record sanity check. The red-team comparison with recoherence, reversible measurement, Quantum Darwinism and controlled branching literature shows that record formation/decoherence alone cannot supply an irreversible residual. A single observed `(V_pre,ν_echo)` pair also cannot identify the law because `η=log(ν_echo)/log(V_pre)` can be fit post hoc.  
+**Affected claims/files:** `PSF_RESEARCH_STATE.md` P1/N5; `red-team/LOG.md` RT-2026-004 and RT-2026-005; `open-problems/QUEUE.md` P1/P7; prospective echo experiment dossier.  
+**Consequence:** Before empirical advocacy, independently specify or prospectively calibrate one common `η`, fix the physical filtration/record states before target data, characterize ordinary inverse error with matched controls, and provide a complete linear/no-signalling dynamics or explicitly retain the law as phenomenological/incomplete.  
+**Reversible if:** a complete selector dynamics changes the observable law, or a standard-unitary mechanism reproduces the same predeclared relation under matched controls, in which case the discriminator must be revised or abandoned.
+
 ## Decision template
 
 ### D-YYYY-NNN — Title
