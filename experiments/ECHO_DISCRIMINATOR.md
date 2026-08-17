@@ -49,10 +49,10 @@ A direct finite-dimensional numerical check for `n=1,2,3,4` reproduced this stan
 2. **Calibrate record strength on separate runs.** Estimate `V_pre` or a rigorously related observable without disturbing the runs later used for the echo measurement.
 3. **Fix `η_PSF` before target echo data.** Prefer a physically independent calibration. If that is impossible, use a pre-registered calibration subset and held-out test subset; never fit `η_PSF` on the target datum being claimed as a prediction.
 4. **Run the echo without intermediate record measurement.** Apply the compiled inverse to every ordinary controlled branch degree of freedom and measure final system X/Y coherence or fringe visibility.
-5. **Use matched-control nulls.** Include same-depth/same-gate-count circuits that do not create the designated record, and vary interaction angle/record distinguishability at approximately fixed circuit depth so `V_pre` changes without simply increasing ordinary error exposure.
-6. **Cross the controls.** Also vary circuit depth at matched `V_pre` to determine whether any residual follows hardware error rather than stored record evidence.
+5. **Use matched-control nulls.** Include controls matched not only in depth and gate count but, where feasible, in native pulse/gate structure and interaction-angle schedule. Vary interaction angle/record distinguishability while independently characterizing the corresponding forward/inverse calibration rather than assuming fixed depth removes ordinary error.
+6. **Cross the controls.** Also vary circuit depth and fragment number at matched `V_pre`, while separately varying `V_pre` at matched native control cost, to determine whether any residual follows hardware error rather than stored record evidence.
 7. **Audit hidden records.** Test leakage, spectator modes, residual entanglement, environment reset, readout backaction, classical feed-forward, and compilation asymmetry. An uncontrolled environment that retains which-path information is a standard explanation, not selector evidence.
-8. **Prospective statistical test.** Compare the independently characterized standard-error null with the predeclared curve `log ν_echo = η_PSF log V_pre`, using held-out conditions and correction for the measured inverse fidelity.
+8. **Prospective statistical test.** Compare the independently characterized standard-error null with the predeclared curve `log ν_echo = η_PSF log V_pre`, using held-out conditions and propagation of uncertainty from the measured inverse fidelity/error model.
 
 ## Identifiability boundary
 
@@ -60,7 +60,31 @@ One nontrivial echo point cannot test the selector exponent if `η_PSF` is fit a
 
 `η_PSF = log(ν_echo)/log(V_pre)`.
 
-Predictive content therefore requires a common parameter fixed independently or prospectively, followed by multiple held-out conditions. A convincing experiment must also show that ordinary error models do not generate the same apparent log-linear relation.
+Predictive content therefore requires a common parameter fixed independently or prospectively, followed by multiple held-out conditions.
+
+### 2026-08-17 strengthening: coherent inverse-error mimic
+
+Fixed depth alone is not a sufficient null. In a product-record model with
+
+`V_pre(theta,N)=|cos(theta)|^N`,
+
+suppose ordinary unitary dynamics is followed by an imperfect inverse that leaves a coherent residual conditional angle `epsilon theta` per fragment. Then standard quantum mechanics gives
+
+`ν_noise(theta,N)=|cos(epsilon theta)|^N`.
+
+If this is fit to the selector power law, the apparent exponent is
+
+`eta_eff(theta,epsilon)=log|cos(epsilon theta)| / log|cos(theta)|`,
+
+with the fragment number `N` cancelling exactly. A Wolfram expansion gives
+
+`eta_eff = epsilon^2 + epsilon^2(epsilon^2-1) theta^2/6 + O(theta^4)`.
+
+Therefore, in the weak-record regime, an ordinary coherent inverse-amplitude mismatch locally reproduces the selector form with apparent `eta ≈ epsilon^2`. Increasing redundancy `N` does not break that degeneracy. The experimental null must independently calibrate the forward/inverse interaction mismatch and use a sufficiently broad held-out interaction-strength sweep to test for the higher-order curvature or other model-specific deviations.
+
+This result is derived and numerically sanity-checked in `experiments/ECHO_NOISE_IDENTIFIABILITY_2026-08-17.md`.
+
+Mirror-benchmarking literature further shows that survival under a circuit followed by its inverse can decay under ordinary noise and depends on the relation between forward and inverse error channels. Recent verifiable-benchmark-circuit work argues for controls that mirror the application circuit's native-gate structure and hence its noise profile. No selector interpretation is needed for these effects.
 
 ## Experimental platform relevance
 
@@ -72,8 +96,9 @@ Superconducting-circuit Quantum Darwinism experiments have already generated tun
 - a complete linear and no-signalling dynamics, or a proof that the phenomenological overlap law admits one;
 - an independent or prospectively valid calibration for one common `η_PSF`;
 - a physically derived, predeclared record filtration rather than an epistemically chosen one after data collection;
-- matched-noise/error models strong enough to rule out incomplete reversal and hidden records;
-- quantitative power analysis for realistic echo fidelities and record strengths.
+- an independently characterized forward/inverse error model, including angle-dependent coherent mismatch, leakage and gate-dependent noise;
+- pulse/native-gate-structure-matched controls strong enough to rule out incomplete reversal and hidden records;
+- quantitative power analysis for realistic echo fidelities, record strengths, and the curvature separating selector and standard-noise models.
 
 ## Primary literature used in this dossier
 
@@ -82,7 +107,10 @@ Superconducting-circuit Quantum Darwinism experiments have already generated tun
 - Strasberg, Schindler, Wang & Winter (2026), *Approximate Decoherence, Recoherence and Records in Isolated Quantum Systems*: https://arxiv.org/abs/2601.19703
 - Riedel, Zurek & Zwolak (2012), *The Rise and Fall of Redundancy in Decoherence and Quantum Darwinism*: https://arxiv.org/abs/1205.3197
 - Schindler et al. (2012), *Undoing a quantum measurement*: https://arxiv.org/abs/1211.1791
+- Yoshimura & Sa (2025), *Dynamics of Loschmidt echoes from operator growth in noisy quantum many-body systems*: https://arxiv.org/abs/2509.01585
+- Mayer et al. (2021/2022), *Theory of mirror benchmarking and demonstration on a quantum computer*: https://arxiv.org/abs/2108.10431
+- Harris, Lively & Schuhmacher (2026), *Reducing Quantum Error Mitigation Bias Using Verifiable Benchmark Circuits*: https://arxiv.org/abs/2603.10224
 
 ## Falsification / revision triggers
 
-Revise or abandon this candidate discriminator if a complete selector dynamics yields a different echo law, if the proposed `η_PSF` cannot be independently/prospectively identified, if matched standard-unitary noise models reproduce the predeclared residual curve, or if a physically defensible selector sector cannot be distinguished from ordinary uncontrolled environment degrees of freedom.
+Revise or abandon this candidate discriminator if a complete selector dynamics yields a different echo law, if the proposed `η_PSF` cannot be independently/prospectively identified, if independently calibrated matched standard-unitary noise models reproduce the predeclared residual curve over the intended test region, or if a physically defensible selector sector cannot be distinguished from ordinary uncontrolled environment degrees of freedom.
