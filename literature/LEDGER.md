@@ -119,3 +119,36 @@ No paper is marked as a novelty threat until theorem assumptions and conclusions
 - **Useful contribution:** Supports using a genuine inverse as the null boundary rather than assuming measurement irreversibility.
 - **Reopen if:** later experiments scale deterministic reversal to larger redundant record environments.
 - **Sources:** https://arxiv.org/abs/1211.1791
+
+### L-2026-009 — Yoshimura & Sá, “Dynamics of Loschmidt echoes from operator growth in noisy quantum many-body systems” (2025)
+- **Date assessed:** 2026-08-17
+- **Relevance:** direct standard-noise null for P1.
+- **PSF claims touched:** N5, P1, RT-2026-004, RT-2026-006.
+- **What overlaps:** Studies forward evolution followed by imperfect backward evolution and shows that ordinary noisy Loschmidt echoes decay because of dissipation/noise, with the decay coupled to operator growth. In their generic picture the echo has different weak- and strong-noise/time regimes, including Gaussian and exponential behavior; they rigorously establish the stated behavior in a solvable noisy many-body circuit.
+- **What differs:** No record-filtration selector sector or PSF law is introduced. The paper concerns standard noisy quantum dynamics and operator growth.
+- **Novelty threat:** none to the PSF filtration; high relevance to empirical attribution because equal duration/depth does not imply equal echo loss when the dynamics changes operator support and noise sensitivity.
+- **Useful contribution:** Strengthens the null from “ordinary gate error exists” to “ordinary echo decay can depend structurally on the forward dynamics,” so matched-depth controls alone are not sufficient.
+- **Reopen if:** the proposed PSF platform remains in a regime where operator-growth effects can be rigorously bounded away or directly calibrated.
+- **Sources:** https://arxiv.org/abs/2509.01585
+
+### L-2026-010 — Mayer et al., “Theory of mirror benchmarking and demonstration on a quantum computer” (2021/2022)
+- **Date assessed:** 2026-08-17
+- **Relevance:** direct experimental-method/null-model relevance.
+- **PSF claims touched:** N5, P1, RT-2026-006.
+- **What overlaps:** Uses random circuits followed by their inverse and derives survival-probability decay under explicit noise assumptions. The theory makes the relation between forward and inverse error channels part of the decay law and discusses when coherent errors cancel versus when arbitrary inverse-gate error channels change the result.
+- **What differs:** It is a benchmarking protocol, not a theory of records or past selection.
+- **Novelty threat:** none to PSF mathematics; high methodological relevance to the echo discriminator.
+- **Useful contribution:** Provides a mature standard framework for characterizing inverse-circuit error instead of treating imperfect reversal as an undifferentiated nuisance. It also supports randomized/twirled controls to expose coherent-error behavior.
+- **Reopen if:** a PSF implementation uses non-random structured circuits whose noise falls outside the mirror-benchmark assumptions; then application-specific calibration is still needed.
+- **Sources:** https://arxiv.org/abs/2108.10431
+
+### L-2026-011 — Harris, Lively & Schuhmacher, “Reducing Quantum Error Mitigation Bias Using Verifiable Benchmark Circuits” (2026)
+- **Date assessed:** 2026-08-17
+- **Relevance:** adjacent/direct control-design relevance.
+- **PSF claims touched:** N5, P1, RT-2026-006.
+- **What overlaps:** Constructs verifiable benchmark circuits that mirror an application circuit's native-gate structure and hence its noise profile, with demonstrations on large superconducting circuits.
+- **What differs:** The goal is error-mitigation benchmarking rather than record physics or echo selection.
+- **Novelty threat:** none.
+- **Useful contribution:** Supports strengthening PSF controls from “same depth / same gate count” to native-structure/pulse-matched verifiable controls where feasible.
+- **Reopen if:** the proposed record circuit has no verifiable companion that preserves its relevant native control structure without creating the designated record.
+- **Sources:** https://arxiv.org/abs/2603.10224
