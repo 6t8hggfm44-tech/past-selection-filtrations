@@ -31,6 +31,15 @@ This file records changes that affect claims, priorities, interpretation, or pub
 **Consequence:** Before empirical advocacy, independently specify or prospectively calibrate one common `η`, fix the physical filtration/record states before target data, characterize ordinary inverse error with matched controls, and provide a complete linear/no-signalling dynamics or explicitly retain the law as phenomenological/incomplete.  
 **Reversible if:** a complete selector dynamics changes the observable law, or a standard-unitary mechanism reproduces the same predeclared relation under matched controls, in which case the discriminator must be revised or abandoned.
 
+## D-2026-005 — Fixed-depth echo controls are insufficient; require angle-resolved inverse calibration
+**Date:** 2026-08-17  
+**Previous position:** The echo protocol treated varying `V_pre` at approximately fixed circuit depth/gate count, together with matched-noise controls, as a principal way to separate selector-correlated residuals from ordinary hardware error.  
+**New position:** Retain fixed-depth variation as useful but explicitly insufficient. For a product record with `V_pre=|cos(theta)|^N`, a standard-unitary attempted inverse that leaves a coherent residual conditional angle `epsilon theta` gives `ν_noise=|cos(epsilon theta)|^N`. When naively expressed as a selector power law, `eta_eff=log|cos(epsilon theta)|/log|cos(theta)| = epsilon^2 + epsilon^2(epsilon^2-1)theta^2/6 + O(theta^4)`. Thus ordinary coherent inverse-amplitude mismatch locally produces the same apparent form as `ν_echo=V_pre^eta`, with `eta≈epsilon^2`, and the factor `N` cancels from the apparent exponent.  
+**Evidence/reason:** Analytic product-record derivation; Wolfram symbolic and numerical checks; Yoshimura & Sá (2025) on ordinary noisy many-body Loschmidt-echo decay and operator-growth dependence; Mayer et al. on mirror benchmarking and the dependence of inverse-circuit survival on the forward/inverse error-channel relation; Harris, Lively & Schuhmacher (2026) on native-gate-structure-matched verifiable benchmark circuits.  
+**Affected claims/files:** `PSF_RESEARCH_STATE.md` P1/N5 and epistemic rules; `red-team/LOG.md` RT-2026-006; `open-problems/QUEUE.md` P1; `experiments/ECHO_DISCRIMINATOR.md`; `experiments/ECHO_NOISE_IDENTIFIABILITY_2026-08-17.md`; `literature/LEDGER.md`.  
+**Consequence:** A credible selector test must independently characterize forward/inverse error versus interaction strength before target data, use pulse/native-structure-matched controls where feasible, propagate a standard-noise prediction band, and use held-out interaction strengths broad enough to distinguish a constant selector exponent from ordinary-error curvature. Increasing redundancy alone is not a discriminator for this null.  
+**Reversible if:** a proposed physical implementation proves that the relevant forward/inverse mismatch is absent or independently bounded below experimental sensitivity over the whole test region, or a complete selector dynamics yields a discriminator orthogonal to this degeneracy.
+
 ## Decision template
 
 ### D-YYYY-NNN — Title
