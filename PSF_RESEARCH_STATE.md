@@ -1,6 +1,6 @@
 # PSF Research State
 
-**Status date:** 2026-08-10  
+**Status date:** 2026-08-17  
 **Canonical manuscript basis:** July 2026 revision  
 **Purpose:** Machine- and human-readable current epistemic state of the Past-Selection Filtrations research program.
 
@@ -43,7 +43,7 @@ Normalizer/equivariance results and finite-dimensional approximate bounds are ma
 | N2 | Specific visibility / record-access synthesis and bounds | Medium-high | fidelity monotonicity, distinguishability, Chernoff theory, redundant records; recent QEC–Darwinism tradeoffs | Medium | theorem-by-theorem comparison with prior literature, including Maity–Onggadinata–Koh 2026 |
 | N3 | Delayed-choice equivariance / future-invariance formulation | Medium | normalizers, conditional expectations, quantum instruments, delayed-choice literature | Medium-high | targeted prior-art search plus assumption-level theorem comparison |
 | N4 | AQFT expected-vs-restriction filtration treatment in PSF context | Medium | Takesaki theory, modular inclusions, AQFT | Medium-high | specialist literature audit |
-| N5 | Distinctive physical prediction from optional additional postulates | Unestablished | interpretations of QM, decoherence, objective-collapse and modified-dynamics proposals | Critical/open | independently specify selector dynamics, calibration, physical filtration and noise controls; then test the predeclared echo law against the standard-unitary null |
+| N5 | Distinctive physical prediction from optional additional postulates | Unestablished | interpretations of QM, decoherence, objective-collapse and modified-dynamics proposals | Critical/open | independently specify selector dynamics, calibration, physical filtration and a quantitatively predictive ordinary inverse-noise model; then test the predeclared echo law against held-out standard-unitary nulls |
 
 **2026-08-10 narrowing of N1:** The broad ideas “objective past from redundant accessible records” and “classical/objective information as locally accessible/recoverable operator-algebraic substructure” are not defensible as standalone novelty claims. Riedel–Zurek–Zwolak (2013) is direct conceptual prior art for an objective past built from redundant records. Girard–Cheng–Cao (2026) gives a substantive OAQEC formulation of accessible/recoverable logical subalgebras and their centers, although it postdates the November 2025 PSF preprint and therefore does not by itself establish priority against PSF. The surviving candidate novelty is narrower: the particular ordered temporal record-filtration synthesis, compatible realization of past alternatives, and its quantitative visibility/access machinery. This remains unresolved rather than defeated.
 
@@ -51,7 +51,7 @@ Numerical percentages are intentionally avoided until enough independent audits 
 
 ## 4. Critical open problems
 
-1. **Experimental discriminator.** A concrete conditional fork is now isolated for the optional selector law. With the manuscript definition `Σ=-log V` and selector overlap/echo law `ν_echo=exp(-ηΣ)`, the operational prediction is `ν_echo=V_pre^η` after an ideal inverse restores all ordinary non-selector branch degrees. Standard unitary QM and base PSF predict complete restoration under a genuinely global inverse. This is progress on P1, not an established prediction of base PSF. Major blockers remain: a complete dynamics for the selector degree of freedom, an independent calibration protocol for the common `η`, a physically fixed filtration/record model, and controls excluding ordinary imperfect reversal or hidden records.
+1. **Experimental discriminator.** A concrete conditional fork remains isolated for the optional selector law. With the manuscript definition `Σ=-log V` and selector overlap/echo law `ν_echo=exp(-ηΣ)`, the operational prediction is `ν_echo=V_pre^η` after an ideal inverse restores all ordinary non-selector branch degrees. Standard unitary QM and base PSF predict complete restoration under a genuinely global exact inverse. However, the empirical null is now stronger: in a product-record model with `V_pre=|cos(theta)|^N`, an ordinary coherent inverse-amplitude mismatch leaving residual angle `epsilon theta` gives `ν_noise=|cos(epsilon theta)|^N`, which in the weak-record regime is locally equivalent to a selector law with apparent `eta≈epsilon^2`. Fragment number `N` does not break this degeneracy because it cancels from the fitted exponent. Therefore fixed depth/gate count and multiple record fragments are insufficient controls by themselves. Major blockers remain: complete selector dynamics, independent `η` calibration, a physically fixed filtration/record model, independently characterized angle-dependent forward/inverse error, pulse/native-structure-matched controls, and enough held-out interaction-strength range/power to distinguish selector behavior from standard-noise curvature.
 2. **Prior-art audit.** Search older and terminology-diverse literature for constructions materially equivalent to the core record-filtration synthesis; include priority-aware comparison because some close 2026 algebraic work postdates the 2025 PSF preprint.
 3. **Independent proof audit.** Re-derive central results without relying on manuscript prose; actively seek counterexamples and hidden assumptions.
 4. **Physical meaning of state-preserving expectations / normalizer restrictions.** Determine how restrictive the mathematical hypotheses are in realistic physical models.
@@ -69,6 +69,7 @@ Numerical percentages are intentionally avoided until enough independent audits 
 - Does the framework produce any empirical content absent additional postulates?
 - Can the proposed selector-echo residual be distinguished from ordinary circuit-depth/gate/decoherence error at matched physical control cost?
 - Is the selector parameter `η` identifiable independently, or can it be fitted post hoc to any observed echo deficit?
+- Can angle-dependent coherent inverse mismatch, gate-dependent noise, operator-growth-dependent noise sensitivity, or hidden records reproduce an apparent constant selector exponent over the experimental range?
 
 ## 6. Epistemic rules
 
@@ -79,10 +80,11 @@ Numerical percentages are intentionally avoided until enough independent audits 
 - Negative results count as research progress.
 - Any change to a novelty assessment must include the evidence and reason.
 - For empirical novelty, compare against an explicit standard-dynamics null under the same controls; a residual that can be explained by incomplete reversal is not evidence for new physics.
+- Matching only circuit depth or gate count is not enough when the same interaction parameter changes both record strength and the ordinary reversal-error channel; calibrate the forward/inverse operation itself and use native-structure-matched controls where feasible.
 
 ## 7. Current priority
 
-**Highest-value target:** make the optional selector echo law operationally falsifiable: specify `η` calibration/holdout logic, physical record states and filtration, a matched-noise inverse protocol, and the expected `V_pre -> ν_echo` curve before any target data are examined.  
+**Highest-value target:** make the optional selector echo law operationally falsifiable against the strengthened standard-noise null: independently identify `η`, characterize the physical record states/filtration, measure forward/inverse error as a function of record interaction strength, construct pulse/native-structure-matched mirror controls, and predeclare a held-out `V_pre -> ν_echo` comparison with enough dynamic range to distinguish constant selector exponent from ordinary coherent/noisy curvature.  
 **Parallel target:** systematic, priority-aware prior-art and independent proof audit of the base framework, especially operator-algebraic record accessibility and quantitative redundancy/coherence tradeoffs.
 
 ## 8. Change protocol
