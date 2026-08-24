@@ -86,9 +86,33 @@ This result is derived and numerically sanity-checked in `experiments/ECHO_NOISE
 
 Mirror-benchmarking literature further shows that survival under a circuit followed by its inverse can decay under ordinary noise and depends on the relation between forward and inverse error channels. Recent verifiable-benchmark-circuit work argues for controls that mirror the application circuit's native-gate structure and hence its noise profile. No selector interpretation is needed for these effects.
 
+### 2026-08-24 strengthening: weak-record information and calibration limit
+
+For the adversarial locally matched null `epsilon=sqrt(eta)`, the selector and coherent-mismatch models agree through quadratic order in `theta`. Wolfram gives
+
+`log nu_null - log nu_selector = N eta(1-eta) theta^4/12 + O(theta^6)`.
+
+For a final binary X/parity measurement with `p=(1+nu)/2`, the per-shot Kullback-Leibler divergence is
+
+`D_KL(selector || null) = N eta(1-eta)^2 theta^6/288 + O(theta^8)`.
+
+Thus discriminating information collapses as `theta^6` in the weak-record regime. In an optimistic fixed-model normal approximation with one-sided `alpha=0.05`, 80% power, and no nuisance uncertainty,
+
+`M ≈ 890.29/[N eta(1-eta)^2 theta^6]`.
+
+A separate weak-angle calibration criterion requiring the 95% uncertainty in coherent mismatch to remain below half the selector-null gap gives approximately
+
+`sigma_epsilon/epsilon < (1-eta) theta^2/47.04`.
+
+These are design scalings, not hardware forecasts. They show that a perturbatively clean near-zero-angle sweep can be statistically poor even though the rival models are formally distinct. The test should instead use an independent nuisance-calibration channel and held-out interaction strengths with enough discriminating curvature, while controlling the new leakage, nonlinear-control, drift and non-Markovian risks that can appear at stronger coupling.
+
+Full derivation, illustrative shot grids, calibration calculations, literature comparison and caveats are recorded in `experiments/ECHO_POWER_CALIBRATION_2026-08-24.md`.
+
 ## Experimental platform relevance
 
 Superconducting-circuit Quantum Darwinism experiments have already generated tunable branching states and redundant environment records with controlled conditional unitaries, providing a plausible architecture class for a reversible-record echo study. This does not imply that the existing experiments tested PSF or achieved the globally controlled inverse required here.
+
+Pulse-inverse/KIK work supplies a more physical candidate implementation of the forward/inverse pair by reversing the interaction-Hamiltonian schedule/sign rather than relying on logical gate self-inversion. Context-aware/error-amplification calibration work supplies candidate measurements for separating coherent and incoherent nuisance contributions in the actual circuit context. These methods improve the control design but do not establish that a complete standard-noise null has been measured to the sensitivity required by PSF.
 
 ## Main blockers
 
@@ -96,9 +120,9 @@ Superconducting-circuit Quantum Darwinism experiments have already generated tun
 - a complete linear and no-signalling dynamics, or a proof that the phenomenological overlap law admits one;
 - an independent or prospectively valid calibration for one common `η_PSF`;
 - a physically derived, predeclared record filtration rather than an epistemically chosen one after data collection;
-- an independently characterized forward/inverse error model, including angle-dependent coherent mismatch, leakage and gate-dependent noise;
-- pulse/native-gate-structure-matched controls strong enough to rule out incomplete reversal and hidden records;
-- quantitative power analysis for realistic echo fidelities, record strengths, and the curvature separating selector and standard-noise models.
+- an independently characterized forward/inverse error model, including angle-dependent coherent mismatch, leakage, higher-order/time-ordering effects, drift and gate-dependent/non-Markovian noise;
+- pulse/native-gate-structure-matched controls and information-complete calibration observables strong enough to rule out incomplete reversal and hidden records;
+- platform-specific joint power/systematics optimization for held-out record strengths rather than a generic weak-angle power-law fit.
 
 ## Primary literature used in this dossier
 
@@ -110,6 +134,11 @@ Superconducting-circuit Quantum Darwinism experiments have already generated tun
 - Yoshimura & Sa (2025), *Dynamics of Loschmidt echoes from operator growth in noisy quantum many-body systems*: https://arxiv.org/abs/2509.01585
 - Mayer et al. (2021/2022), *Theory of mirror benchmarking and demonstration on a quantum computer*: https://arxiv.org/abs/2108.10431
 - Harris, Lively & Schuhmacher (2026), *Reducing Quantum Error Mitigation Bias Using Verifiable Benchmark Circuits*: https://arxiv.org/abs/2603.10224
+- Henao, Santos & Uzdin (2023), *Adaptive quantum error mitigation using pulse-based inverse evolutions*: https://doi.org/10.1038/s41534-023-00785-7
+- Bar, Santos & Uzdin (2026), *Layered KIK quantum error mitigation for dynamic circuits*: https://doi.org/10.1038/s41534-026-01207-0
+- Debroy et al. (2023), *Context-Aware Fidelity Estimation*: https://doi.org/10.1103/PhysRevResearch.5.043202
+- Pan et al. (2026), *Absent, Not Faint: Fisher-Information Limits and a Logarithmic Measurement-Design Cure for Passive Characterization of Coherent Qubit Noise*: https://arxiv.org/abs/2607.21663
+- Zhang et al. (2026), *High-Precision Calibration Workflow Achieves Above 99.9% CZ Gate Fidelity on a Scalable Superconducting Processor*: https://arxiv.org/abs/2607.01422
 
 ## Falsification / revision triggers
 
