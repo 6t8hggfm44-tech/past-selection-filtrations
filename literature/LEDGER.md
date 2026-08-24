@@ -146,9 +146,64 @@ No paper is marked as a novelty threat until theorem assumptions and conclusions
 - **Date assessed:** 2026-08-17
 - **Relevance:** adjacent/direct control-design relevance.
 - **PSF claims touched:** N5, P1, RT-2026-006.
-- **What overlaps:** Constructs verifiable benchmark circuits that mirror an application circuit's native-gate structure and hence its noise profile, with demonstrations on large superconducting circuits.
+- **What overlaps:** Constructs verifiable benchmark circuits that mirror an application's native-gate structure and hence its noise profile, with demonstrations on large superconducting circuits.
 - **What differs:** The goal is error-mitigation benchmarking rather than record physics or echo selection.
 - **Novelty threat:** none.
 - **Useful contribution:** Supports strengthening PSF controls from “same depth / same gate count” to native-structure/pulse-matched verifiable controls where feasible.
 - **Reopen if:** the proposed record circuit has no verifiable companion that preserves its relevant native control structure without creating the designated record.
 - **Sources:** https://arxiv.org/abs/2603.10224
+
+### L-2026-012 — Henao, Santos & Uzdin, “Adaptive quantum error mitigation using pulse-based inverse evolutions” (2023)
+- **Date assessed:** 2026-08-24
+- **Relevance:** direct experimental-method/null-model relevance.
+- **PSF claims touched:** N5, P1, RT-2026-006/007.
+- **What overlaps:** Defines an operational pulse inverse by reversing the schedule of the effective interaction Hamiltonian and inverting its sign, including for logically self-inverse gates such as CNOT. Demonstrates that ordinary gate-level folding/insertion can give the wrong noise behavior when noise does not commute with the ideal gate, and uses a forward/pulse-inverse echo quantity in the mitigation procedure.
+- **What differs:** This is quantum error mitigation, not record physics or selector dynamics. The pulse inverse is an operational inverse construction for a noisy control implementation, not the mathematical adjoint of the complete noisy channel.
+- **Novelty threat:** none to PSF mathematics or selector proposal.
+- **Useful contribution:** Provides a more physically faithful implementation concept for the ordinary reversal null than “apply the same self-inverse gate again.” It gives a concrete starting point for separately characterizing the forward/inverse record interaction before PSF target data.
+- **Reopen if:** the selected PSF hardware has control Hamiltonians for which sign/schedule reversal cannot be implemented or for which strong non-Markovian/leakage effects dominate.
+- **Sources:** https://doi.org/10.1038/s41534-023-00785-7 ; https://arxiv.org/abs/2303.05001
+
+### L-2026-013 — Bar, Santos & Uzdin, “Layered KIK quantum error mitigation for dynamic circuits” (2026)
+- **Date assessed:** 2026-08-24
+- **Relevance:** direct experimental-method/null-model relevance.
+- **PSF claims touched:** N5, P1, RT-2026-006/007.
+- **What overlaps:** Extends pulse-inverse noise amplification to layers, explicitly analyzes the difference between operational pulse inverse and an ideal mathematical adjoint, and tracks higher-order Magnus terms. The paper reports that dividing evolution into thinner layers suppresses a leading second-order contribution as `1/L^2` under its assumptions and discusses drift resilience and Markovian/non-Markovian limitations.
+- **What differs:** It is an error-mitigation framework, not a theory of records or past selection. Its convergence statements concern the KIK mitigation construction under stated noise assumptions, not PSF echo identifiability.
+- **Novelty threat:** none.
+- **Useful contribution:** Supplies a concrete warning that even a carefully designed pulse inverse has structured residual terms; it therefore sharpens the PSF null from “calibrate gate error” to “calibrate the operational forward/inverse channel including higher-order/time-ordering effects.”
+- **Reopen if:** a candidate PSF implementation can rigorously bound the relevant Magnus/non-Markovian terms below target sensitivity.
+- **Sources:** https://doi.org/10.1038/s41534-026-01207-0
+
+### L-2026-014 — Debroy et al., “Context-Aware Fidelity Estimation” (2023)
+- **Date assessed:** 2026-08-24
+- **Relevance:** direct calibration-method relevance.
+- **PSF claims touched:** N5, P1, RT-2026-007.
+- **What overlaps:** Repeats a target gate/subcircuit in its spatial and temporal context and exploits different accumulation laws to separate coherent from incoherent error contributions. This directly addresses the need to characterize the nuisance channel attached to the actual record-forming interaction rather than a coarse global benchmark.
+- **What differs:** CAFE estimates operation fidelity/error structure; it does not identify a PSF selector sector and does not by itself produce a complete forward/inverse noise model.
+- **Novelty threat:** none.
+- **Useful contribution:** Provides a practical candidate component for the independent nuisance-calibration stage of a PSF echo experiment.
+- **Reopen if:** the chosen record interaction has error modes (e.g. leakage, spectator entanglement, strongly non-Markovian effects) not captured by the CAFE fit family.
+- **Sources:** https://doi.org/10.1103/PhysRevResearch.5.043202 ; https://arxiv.org/abs/2303.17565
+
+### L-2026-015 — Pan et al., “Absent, Not Faint: Fisher-Information Limits and a Logarithmic Measurement-Design Cure for Passive Characterization of Coherent Qubit Noise” (2026)
+- **Date assessed:** 2026-08-24
+- **Relevance:** direct identifiability/calibration relevance.
+- **PSF claims touched:** N5, P1, RT-2026-006/007.
+- **What overlaps:** Shows that coherent over-rotation parameters can be locally unidentifiable from a single fixed-basis histogram: the Fisher information is singular along the coherent-fault direction at zero angle in the analyzed setting. Additional measurement settings restore visibility/conditioning for the considered fault family.
+- **What differs:** The paper studies passive characterization of specified coherent faults, not record echoes or selector dynamics; its precise theorems have assumptions on commuting faults/support/measurement design that should not be generalized automatically to every PSF platform.
+- **Novelty threat:** none.
+- **Useful contribution:** Strengthens the requirement that `epsilon(theta)` be measured through a calibration experiment designed to identify coherent error, rather than inferred from the target echo or a potentially blind readout basis.
+- **Reopen if:** a proposed calibration observable is shown analytically to have nonsingular, well-conditioned information for the relevant nuisance parameters across the test region.
+- **Sources:** https://arxiv.org/abs/2607.21663
+
+### L-2026-016 — Zhang et al., “High-Precision Calibration Workflow Achieves Above 99.9% CZ Gate Fidelity on a Scalable Superconducting Processor” (2026)
+- **Date assessed:** 2026-08-24
+- **Relevance:** adjacent/direct platform-feasibility relevance.
+- **PSF claims touched:** N5, P1, RT-2026-007.
+- **What overlaps:** Uses staged error-amplification and CAFE-style circuits to calibrate CZ gates on an 84-qubit superconducting processor, reporting a best fidelity above 99.9%, a coherent-error contribution around 0.007%, and automated stability monitoring over nine hours.
+- **What differs:** This is a platform calibration result, not a PSF test. A small gate coherent-error contribution does not imply that a multi-fragment forward/inverse echo null is known to the same precision, nor that leakage/context/systematics are absent.
+- **Novelty threat:** none.
+- **Useful contribution:** Provides concrete feasibility evidence that high-precision, context-sensitive coherent calibration is experimentally achievable on a modern superconducting platform, while leaving the full PSF nuisance-model requirement open.
+- **Reopen if:** a proposed PSF implementation adopts comparable calibration primitives and can propagate their uncertainty through the full echo circuit.
+- **Sources:** https://arxiv.org/abs/2607.01422
