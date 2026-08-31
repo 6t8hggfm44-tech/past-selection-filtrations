@@ -207,3 +207,25 @@ No paper is marked as a novelty threat until theorem assumptions and conclusions
 - **Useful contribution:** Provides concrete feasibility evidence that high-precision, context-sensitive coherent calibration is experimentally achievable on a modern superconducting platform, while leaving the full PSF nuisance-model requirement open.
 - **Reopen if:** a proposed PSF implementation adopts comparable calibration primitives and can propagate their uncertainty through the full echo circuit.
 - **Sources:** https://arxiv.org/abs/2607.01422
+
+### L-2026-017 — Rudinger et al., “Heisenberg-limited calibration of entangling gates with robust phase estimation” (2025)
+- **Date assessed:** 2026-08-31
+- **Relevance:** direct calibration-method relevance.
+- **PSF claims touched:** N5, P1, RT-2026-007/008.
+- **What overlaps:** Demonstrates robust phase estimation as a high-precision method for estimating coherent errors in multi-qubit entangling gates, experimentally improving a controlled-Z gate on a superconducting processor and validating the result with gate-set tomography. This directly supports the feasibility of converting a coherent PSF inverse-mismatch nuisance into a phase-estimation calibration problem rather than fitting it from the target echo.
+- **What differs:** The paper calibrates entangling-gate coherent error; it does not create or erase redundant records, define a selector sector, or test a PSF echo. Heisenberg-limited phase estimation does not by itself characterize stochastic error, leakage, crosstalk, drift, or hidden environmental records.
+- **Novelty threat:** none.
+- **Useful contribution:** Supplies an experimentally demonstrated primitive for the 2026-08-31 no-record Ramsey control. It makes the proposed `N epsilon theta` phase-amplification strategy technically plausible while preserving the need for an independent full nuisance model.
+- **Reopen if:** the symmetric record gate can be compiled so that the same robust-phase-estimation assumptions hold in the presence of environment-state changes and multi-fragment scheduling.
+- **Sources:** https://arxiv.org/abs/2502.06698
+
+### L-2026-018 — Carignan-Dugas et al., “The Error Reconstruction and Compiled Calibration of Quantum Computing Cycles” (2023)
+- **Date assessed:** 2026-08-31
+- **Relevance:** direct nuisance-model / context-calibration relevance.
+- **PSF claims touched:** N5, P1, RT-2026-008.
+- **What overlaps:** Treats an error profile as belonging to a precisely scheduled cycle rather than to an isolated gate, develops Cycle Error Reconstruction to estimate marginal Pauli error distributions for effective dressed cycles, and develops Stochastic Calibration to identify and suppress local coherent errors. The paper explicitly emphasizes that error distributions depend on the joint instructions and their timing across the processor.
+- **What differs:** CER/SC are quantum-computing diagnostic/calibration tools, not record or selector physics. Their strongest guarantees rely on assumptions such as randomized compiling and Markovian/gate-dependent error structure; they do not automatically model the off-diagonal record-coherence transfer relevant to the PSF target circuit.
+- **Novelty threat:** none.
+- **Useful contribution:** Strengthens the platform-specific design requirement that the ordinary null be calibrated at the **scheduled-cycle/context level**, not by isolated gate fidelities. It is a natural complement to the no-record Ramsey phase control: Ramsey/robust phase estimation targets the coherent mismatch direction, while CER/CB-style measurements can constrain stochastic contextual errors before the target is unblinded.
+- **Reopen if:** the selected superconducting implementation exhibits strong non-Markovian or non-Pauli correlations that defeat the effective dressed-cycle model, or if a more direct process-identification method becomes practical for the complete record circuit.
+- **Sources:** https://arxiv.org/abs/2303.17714
