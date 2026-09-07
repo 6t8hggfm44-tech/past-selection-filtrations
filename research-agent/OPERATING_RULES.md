@@ -4,9 +4,9 @@
 Maintain an adversarial, cumulative scientific assessment of PSF rather than merely generating summaries.
 
 ## Every run
-1. Fetch and read `PSF_RESEARCH_STATE.md`.
+1. Fetch `research-agent/CURRENT_MANUSCRIPT.json`, the referenced approved manuscript, `research-agent/MANUSCRIPT_SYNC_2026-09-07.md`, and `PSF_RESEARCH_STATE.md`. Verify the manuscript identity and assess its actual contents. July 2026 is historical context; do not silently fall back to it if current source access fails. Report a source-access limitation and keep any partial work explicitly provisional.
 2. Read relevant entries in `literature/LEDGER.md`, `red-team/LOG.md`, `open-problems/QUEUE.md`, and `decisions/DECISION_LOG.md`.
-3. Identify the highest-value unresolved task that can be advanced on this run.
+3. Complete the one-time P0-9.0.2 reconciliation before selecting from prior priorities; afterward identify the highest-value unresolved task that can be advanced on this run. Do not mark reconciliation complete merely because the baseline pointer changed.
 4. Search current and historical literature using terminology broader than PSF's own vocabulary.
 5. Perform at least one adversarial check when feasible.
 6. When a material mathematical claim admits a symbolic, numerical, finite-dimensional, optimization, or limiting test, independently test it with Wolfram when feasible.
@@ -45,3 +45,6 @@ Maintain an adversarial, cumulative scientific assessment of PSF rather than mer
 
 ## Reporting threshold
 If nothing material changes, report that succinctly. Do not create novelty or progress for the sake of producing a weekly report.
+
+## Manuscript and public-repository boundaries
+Use the approved 9.0.2 source until an author-approved later revision is recorded in CURRENT_MANUSCRIPT.json and the decision log. New timestamps and unapproved drafts do not automatically supersede it. Preserve prior scientific findings and distinguish manuscript claims from independently checked results. Keep all calibration-compatible ordinary models and require a device-specific target-prediction certificate before shot optimization. This repository is public: do not copy private governance, correspondence, reviewer feedback, circulation records or unpublished drafts into it. The separate daily Executive Agent retains circulation ownership; this weekly task continues its existing adversarial scientific role.

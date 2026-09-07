@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "adopted_date": "2026-09-07",
+  "status": "author_approved_current_manuscript",
+  "title": "The Accessible Quantum Past: Record Information, Coherence Bounds, and Echo Tests",
+  "author": "Peter James Bavaro",
+  "manuscript_version": "9.0.2",
+  "manuscript_date": "2026-09-07",
+  "version_doi": "10.5281/zenodo.22647510",
+  "version_url": "https://doi.org/10.5281/zenodo.22647510",
+  "record_url": "https://zenodo.org/records/22647510",
+  "concept_doi": "10.5281/zenodo.17288075",
+  "zenodo_version_ordinal": 4,
+  "published_pdf": {
+    "filename": "Past_Selection_Filtration_version_9_0_2.pdf",
+    "bytes": 670609,
+    "pages": 33,
+    "sha256": "50aaff14f11a81da5ee7557d3ff86e446d8075b69717daf220ad75ff814410f9"
+  },
+  "public_code": {
+    "repository": "6t8hggfm44-tech/psf-echo-certificate",
+    "commit": "5abad61cee2c9b1318117d8b6ca1305dace63c82"
+  },
+  "supersedes_manuscript_baseline": "July 2026 formulation; prior weekly findings are preserved and require claim-level reconciliation",
+  "adoption_decision": "D-2026-008",
+  "adoption_is_not": "Independent proof certification, completed reconciliation, human peer review or experimental evidence",
+  "future_revision_rule": "Use this version until the author approves a later manuscript and this record plus the decision log are updated. A later timestamp or working draft alone is not approval."
+}

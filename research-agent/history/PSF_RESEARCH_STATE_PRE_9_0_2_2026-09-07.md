@@ -1,20 +1,14 @@
 # PSF Research State
 
 **Status date:** 2026-09-07  
-**Canonical manuscript basis:** September 7, 2026 manuscript 9.0.2 — [version DOI](https://doi.org/10.5281/zenodo.22647510)  
+**Canonical manuscript basis:** July 2026 revision  
 **Purpose:** Machine- and human-readable current epistemic state of the Past-Selection Filtrations research program.
-
-## Current manuscript adoption and reconciliation status
-
-The author requested adoption of the updated paper on September 7. [CURRENT_MANUSCRIPT.json](research-agent/CURRENT_MANUSCRIPT.json) fixes its identity; [the synchronization guide](research-agent/MANUSCRIPT_SYNC_2026-09-07.md) specifies the new source boundaries and first-run reconciliation. The July formulation is now historical context. This baseline change is not a completed scientific audit or a change in empirical support.
-
-**Next run:** complete P0-9.0.2, mapping inherited C1-C5/AQFT attributions, prior P1/P7 and compiled-path findings against the actual revised manuscript. Earlier confidence ratings and model-specific calculations below are retained provisional assessments from the weekly program; they must not be represented as an exhaustive assessment of 9.0.2. The complete pre-synchronization state is [preserved verbatim](research-agent/history/PSF_RESEARCH_STATE_PRE_9_0_2_2026-09-07.md).
 
 ## 1. Research thesis
 
-PSF models an observer's accessible past using increasing algebras of records. The current manuscript separates the base record-filtration framework and its mathematical consequences from optional additional physical postulates concerning settled records and future-invariance. The base framework is not presently claimed to produce a failure of unitary quantum mechanics by itself.
+PSF models an observer's accessible past using increasing algebras of records. The July 2026 formulation separates the base record-filtration framework and its mathematical consequences from optional additional physical postulates concerning settled records and future-invariance. The base framework is not presently claimed to produce a failure of unitary quantum mechanics by itself.
 
-## 2. Framework summary and current additions
+## 2. Established framework/results — baseline
 
 ### C1 — Accessible-record filtration
 **Status:** foundational construction  
@@ -31,29 +25,17 @@ Faithful normal state-preserving conditional expectations provide expected lifts
 **Confidence:** high, provisional to red-team review  
 The framework develops root-fidelity visibility bounds, monotonicity/data-processing consequences, trace-distance and Chernoff relations, fragmented-record bounds, and correlated-record bounds.
 
-### C4 — Historical AQFT distinction
-**Status:** inherited July assessment; current-manuscript attribution pending reconciliation  
-**Prior confidence:** high, subject to specialist review; not a fresh 9.0.2 assessment  
-The earlier weekly assessment distinguished globally modular-invariant expected nests from half-sided modular inclusions and associated restriction-based filtrations. The synchronization review did not locate these topics in the accepted 9.0.2 source. P0 must map their historical role and current scope before presenting them as claims of the revised manuscript.
+### C4 — AQFT distinction
+**Status:** current formulation  
+**Confidence:** high, subject to specialist review  
+The manuscript distinguishes globally modular-invariant expected nests from half-sided modular inclusions; the latter need not provide vacuum-preserving expectations and may instead support restriction-based filtrations.
 
-### C5 — Historical delayed-choice / future-operation assessment
-**Status:** inherited July claim attribution; pending reconciliation with revised formulation  
-**Prior confidence:** medium-high; not a fresh 9.0.2 assessment  
-The earlier weekly assessment attributed normalizer/equivariance results and finite-dimensional approximate bounds to its manuscript baseline. The synchronization review did not locate the normalizer formulation in the accepted 9.0.2 source. Reconcile the earlier attributions against the revised operational/fixed-point treatment before assigning current claim status. Physical settledness must remain separately labeled and cannot be inferred merely from an algebraic result.
+### C5 — Delayed-choice / future-operation structure
+**Status:** mathematical results under stated assumptions plus constructive physical extension  
+**Confidence:** medium-high  
+Normalizer/equivariance results and finite-dimensional approximate bounds are mathematical claims. Any interpretation as physical settledness must remain separately labeled and must not be inferred merely from the algebraic result.
 
-### C6 — Quantitative holonomy and uncertainty
-**Status:** proved manuscript claims under explicit hypotheses; independent continuing review required  
-Section 7 includes the faithful-state bound and uncertainty certificate for the specified completion objective. Preserve phase freedom, prior-art qualifications and the unresolved scope of sharpness/singular extensions.
-
-### C7 — Calibration-to-target identifiability
-**Status:** finite-dimensional target-set result under declared environment-local/shared-context/trusted-control assumptions  
-Section 8 retains every compatible ordinary channel and provides counterexamples beyond the model. It does not claim unrestricted process tomography, a native-device certificate, or exclusion of ordinary quantum mechanics.
-
-### C8 — Registration interaction and memory
-**Status:** specified ordinary operational model, with attributed Hamiltonian and conditional protocol predictions  
-Section 10 supplies a readable instrument and distinct fresh/reused-monitor predictions with calibration ambiguities retained. Fundamental selection, actuality, Born-rule derivation and empirical evidence remain separate open questions.
-
-## 3. Novelty ledger — carried-forward assessments pending 9.0.2 reconciliation
+## 3. Novelty ledger — current assessment
 
 | ID | Claim area | Confidence in substantive novelty | Closest known territory | Threat | What would settle it |
 |---|---|---:|---|---|---|
@@ -67,9 +49,7 @@ Section 10 supplies a readable instrument and distinct fresh/reused-monitor pred
 
 Numerical percentages are intentionally avoided until enough independent audits exist to justify calibration.
 
-## 4. Prior open problems and model-specific findings retained for reconciliation
-
-The detailed P1 narrative below records the earlier phenomenological-selector work and its countermodels. Its references to an incomplete fundamental selector must not erase the ordinary operational interaction now supplied in Section 10. P0-9.0.2 must establish which questions remain unchanged, narrow, or are already addressed. Target predictions must retain the entire calibration-compatible ordinary family before shot optimization.
+## 4. Critical open problems
 
 1. **Experimental discriminator.** A concrete conditional fork remains isolated for the optional selector law. With the manuscript definition `Σ=-log V` and selector overlap/echo law `ν_echo=exp(-ηΣ)`, the operational prediction is `ν_echo=V_pre^η` after an ideal inverse restores all ordinary non-selector branch degrees. Standard unitary QM and base PSF predict complete restoration under a genuinely global exact inverse. The empirical null is substantially stronger than a generic gate-error model. In a product-record model with `V_pre=|cos(theta)|^N`, an ordinary coherent inverse-amplitude mismatch leaving residual angle `epsilon theta` gives `ν_noise=|cos(epsilon theta)|^N`; in the weak-record regime this is locally equivalent to a selector law with apparent `eta≈epsilon^2`, and `N` cancels from the fitted exponent. The 2026-08-24 power analysis sharpens the consequence: for the adversarial locally matched null `epsilon=sqrt(eta)`, selector and null agree through quadratic order, `log ν_null-log ν_selector = N eta(1-eta)theta^4/12+O(theta^6)`, and for a binary X/parity readout the per-shot KL divergence is only `N eta(1-eta)^2 theta^6/288+O(theta^8)`. Thus weak-record testing is intrinsically information-poor against this null; merely adding more near-zero-angle points is not an efficient discriminator. Under an optimistic fixed-model normal approximation (one-sided alpha 0.05, 80% power, no nuisance uncertainty), the target-shot requirement behaves as `M≈890.29/[N eta(1-eta)^2 theta^6]`. Calibration is also stringent at small angle: a simple criterion that the 95% uncertainty in coherent mismatch be less than half the selector-null gap gives `sigma_epsilon/epsilon < (1-eta)theta^2/47.04` asymptotically. These are design scalings, not hardware forecasts. The 2026-08-31 common-eigenstate Ramsey construction gives a high-information candidate calibration of the leading coherent mismatch at the **effective-gate endpoint**, but the 2026-09-07 compiled-path audit shows that endpoint nulling is not enough: a standard exact `H-CNOT-Rz-CNOT-H` realization of the same logical `ZX` gate drives the nominal no-record environment branches to orthogonal states (`|<e0|e1>|=0`) mid-circuit before uncomputing them back to unit overlap. Therefore a calibration arm can be logically no-record yet physically record-forming along its trajectory. If the optional selector is sensitive to transient/accumulated records, such an arm is contaminated; if it is endpoint-only, that is an additional physical rule that the incomplete selector dynamics must explicitly justify. A credible implementation must now audit a predeclared pathwise record metric over the actual pulse/Hamiltonian trajectory and hidden degrees, or complete the selector dynamics sufficiently to specify why transient records do or do not contribute. Native/analog conditional interactions that keep the common-eigenstate overlap at unit modulus throughout the ideal trajectory are a preferred design direction. Pulse-inverse/KIK and context-aware coherent-error calibration literature provide concrete candidate control tools, and recent leakage/crosstalk Hamiltonian-engineering work improves feasibility, but none eliminates drift, higher-order/time-ordering, hidden-record or non-Markovian systematics. Major blockers remain: complete selector dynamics including its time/path rule for `Σ`; independent `η` calibration; a physically fixed filtration/record model; a platform-specific independently characterized forward/inverse noise model with uncertainty; pathwise branch-dependent leakage/spectator/control-mode bounds; and a held-out interaction-strength region that has enough discriminating curvature without introducing uncontrolled strong-coupling systematics.
 2. **Prior-art audit.** Search older and terminology-diverse literature for constructions materially equivalent to the core record-filtration synthesis; include priority-aware comparison because some close 2026 algebraic work postdates the 2025 PSF preprint.
@@ -109,11 +89,8 @@ The detailed P1 narrative below records the earlier phenomenological-selector wo
 
 ## 7. Current priority
 
-**Immediate:** complete P0-9.0.2 using the [synchronization guide](research-agent/MANUSCRIPT_SYNC_2026-09-07.md). Produce a source-located reconciliation of inherited C1-C5/AQFT attributions, P1/P7, the compiled-path audit and the added mathematical/operational results; keep unresolved findings and negative results intact.
-
-**After reconciliation:** advance the highest-value tractable scientific issue. For experimental design, declare the native controls, preparation/readout, timing/context and noise model; audit relevant physical trajectories and hidden degrees; preserve all ordinary channels/processes consistent with calibration; and require a target-prediction identifiability certificate before shot-count optimization. Neither a fitted selector exponent nor an ideal registration interaction is evidence for new physics.
-
-**Parallel:** continue priority-aware prior-art and independent proof review of the revised mathematical claims without inheriting novelty or proof status merely from this baseline update.
+**Highest-value target:** make the optional selector echo law operationally falsifiable against the strengthened standard-noise null by constructing a platform-specific prospective design. The next implementation should use a realizable native/analog conditional interaction (for example calibrated `ZX`, or `ZZ` plus basis rotation) and model the actual driven path including leaked levels and spectators. Freeze a physical filtration and a pathwise record metric `V(t)`; verify that the no-record calibration arm remains record-null throughout the mechanism-relevant trajectory while retaining high coherent-nuisance information; independently identify or prospectively calibrate `η`; characterize coherent, stochastic, leakage, crosstalk, drift and non-Markovian nuisance parameters; freeze the standard-noise prediction; then optimize held-out `(theta,N)` conditions for expected likelihood/KL separation. If a complete selector dynamics instead makes only a designated endpoint relevant, that path-independence rule must be stated and justified before using digitally compiled no-record controls. Do not concentrate the experiment in the weak-record regime merely because the selector relation looks locally log-linear there.  
+**Parallel target:** systematic, priority-aware prior-art and independent proof audit of the base framework, especially operator-algebraic record accessibility and quantitative redundancy/coherence tradeoffs.
 
 ## 8. Change protocol
 

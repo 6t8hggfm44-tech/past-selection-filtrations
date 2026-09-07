@@ -58,6 +58,17 @@ This file records changes that affect claims, priorities, interpretation, or pub
 **Consequence:** The 2026-08-31 calibration idea remains viable only with a stronger implementation requirement. Prefer a native/analog conditional Hamiltonian or another pulse path for which the designated record overlap remains null throughout the mechanism-relevant trajectory, and explicitly audit leaked levels, spectators, resonators/control modes and the timing rule for `Σ`. This is a narrowing of P1 and a concrete motivation for P7 selector-dynamics completion; it is **not evidence for selector physics** and does not change the base-PSF novelty assessment.  
 **Reversible if:** a complete selector dynamics establishes and physically justifies an endpoint-only `Σ` that is insensitive to transient records, or an implementation-specific proof/measurement shows that the relevant physical trajectory never creates branch-distinguishing records above the predeclared sensitivity/filtration boundary.
 
+## D-2026-008 — Adopt the September 7 manuscript 9.0.2 for weekly research
+**Date:** 2026-09-07  
+**Authority:** The author explicitly requested that the existing PSF Research Agent use the updated paper.  
+**Previous baseline:** July 2026 formulation under D-2026-001.  
+**New baseline:** The Accessible Quantum Past: Record Information, Coherence Bounds, and Echo Tests, Peter James Bavaro, September 7, 2026, manuscript 9.0.2, DOI 10.5281/zenodo.22647510. CURRENT_MANUSCRIPT.json fixes the public paper identity.  
+**Reason and scope:** Synchronize the recurring agent with the author's approved manuscript. Sections 7, 8 and 10 add or sharpen holonomy, calibration-to-target and ordinary registration/memory content that the old July baseline does not fully represent. This administrative adoption is not an independent proof audit, completed old/new reconciliation, novelty upgrade or experimental support.  
+**Preservation:** The entire pre-adoption state is archived verbatim; prior decisions, literature entries, experiment dossiers and red-team findings remain unchanged. The compiled-path audit and nuisance countermodels must be reconciled, not silently discarded.  
+**Next action:** Complete P0-9.0.2, including inherited C1-C5/AQFT attributions and P1/P7 findings, with source locations and explicit classifications before proceeding on inherited P1/P7 priorities. Retain every compatible ordinary model and obtain target-predictive identifiability before shot optimization.  
+**Task separation:** Keep the existing weekly scientific role and schedule; circulation remains with the separate daily Executive Agent. Public repository records must not expose private working material.  
+**Supersession rule:** A later author-approved manuscript plus an explicit identity-record/decision-log update can replace this baseline.
+
 ## Decision template
 
 ### D-YYYY-NNN — Title
