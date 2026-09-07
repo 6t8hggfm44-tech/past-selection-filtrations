@@ -229,3 +229,36 @@ No paper is marked as a novelty threat until theorem assumptions and conclusions
 - **Useful contribution:** Strengthens the platform-specific design requirement that the ordinary null be calibrated at the **scheduled-cycle/context level**, not by isolated gate fidelities. It is a natural complement to the no-record Ramsey phase control: Ramsey/robust phase estimation targets the coherent mismatch direction, while CER/CB-style measurements can constrain stochastic contextual errors before the target is unblinded.
 - **Reopen if:** the selected superconducting implementation exhibits strong non-Markovian or non-Pauli correlations that defeat the effective dressed-cycle model, or if a more direct process-identification method becomes practical for the complete record circuit.
 - **Sources:** https://arxiv.org/abs/2303.17714
+
+### L-2026-019 — Liu & Zhang, “Distinguishing Coherent and Incoherent Errors in Multi-Round Time-Reversed Dynamics via Scramblons” (2026)
+- **Date assessed:** 2026-09-07
+- **Relevance:** direct/adjacent reversal-error-identification relevance.
+- **PSF claims touched:** N5, P1, RT-2026-007/009.
+- **What overlaps:** Analyzes Loschmidt/time-reversal echoes under both coherent Hamiltonian-control error and incoherent environmental error, with repeated reversal rounds providing a second design axis beyond a single endpoint. In the studied chaotic setting, incoherent error accumulates linearly in round number, whereas coherent error crosses from quadratic to linear accumulation. This is directly relevant to PSF's need to distinguish coherent inverse mismatch from incoherent/noisy echo loss prospectively rather than fit one aggregate residual.
+- **What differs:** The theory is developed using scramblon methods and explicitly verified in the Sachdev–Ye–Kitaev model; the PSF record circuit is structured, finite and need not be chaotic. The reported round-scaling laws therefore cannot be imported as a hardware null without validation. The paper contains no PSF record filtration or selector physics.
+- **Novelty threat:** none to PSF mathematics or selector proposal.
+- **Useful contribution:** Suggests a concrete additional nuisance-discrimination dimension—round-number scaling—that can be tested in calibration runs before selector-target unblinding. It also reinforces the general point that coherent and incoherent reversal errors can carry distinct temporal signatures rather than being collapsed into one visibility parameter.
+- **Reopen if:** a native PSF-style structured record circuit is modeled or measured under multiple reversal rounds and shows whether the same scaling distinction survives outside the chaotic/SYK regime.
+- **Sources:** https://arxiv.org/abs/2601.04856 ; https://journals.aps.org/prl/accepted/6f07fYd1Abc1319180a6665284fd6b736081706b6 ; DOI https://doi.org/10.1103/j72q-pf3h
+
+### L-2026-020 — Wang et al., “Spectator Leakage Suppression via Invariant Subspace Engineering for CZ Gates in Superconducting Quantum Circuits” (2026)
+- **Date assessed:** 2026-09-07
+- **Relevance:** direct platform/nuisance-control relevance.
+- **PSF claims touched:** N5, P1, RT-2026-008/009.
+- **What overlaps:** Uses tunable-coupler Hamiltonian engineering to reshape the physical CZ-gate trajectory so near-resonant spectator dynamics are confined to an invariant subspace, experimentally suppressing leakage to order `10^-4` over a wide detuning range and with up to three simultaneous spectators. The PSF echo design specifically needs branch-dependent spectator/leakage channels characterized because they can carry hidden which-branch information or create ordinary echo loss.
+- **What differs:** This is a superconducting-gate-control result, not a record/selector experiment. Suppressing population leakage does not by itself prove that spectator modes carry no branch-distinguishing information below the PSF target sensitivity, nor that the complete forward/inverse channel is Markovian or matched between calibration and target preparations.
+- **Novelty threat:** none.
+- **Useful contribution:** Provides current experimental evidence that trajectory-level Hamiltonian engineering can materially reduce a nuisance channel that the 2026-09-07 path audit makes central. It supports treating the actual driven Hamiltonian and spectator manifold—not just the logical gate label—as the proper control object.
+- **Reopen if:** a PSF implementation uses a tunable-coupler CZ/conditional gate and can translate measured leakage suppression into a prospective bound on hidden branch information and echo bias.
+- **Sources:** https://journals.aps.org/prl/abstract/10.1103/zywf-twfv ; DOI https://doi.org/10.1103/zywf-twfv
+
+### L-2026-021 — Patterson et al., “Calibration of the cross-resonance two-qubit gate between directly-coupled transmons” (2019)
+- **Date assessed:** 2026-09-07
+- **Relevance:** direct historical interaction-primitive relevance.
+- **PSF claims touched:** N5, P1, RT-2026-009.
+- **What overlaps:** Experimentally realizes and calibrates an effective superconducting `ZX` interaction using Hamiltonian tomography and repeated-gate amplification. That interaction is algebraically aligned with the symmetric conditional rotation used in the PSF no-record Ramsey construction and offers a route to implementing the desired interaction as a physical Hamiltonian path rather than synthesizing it from two fixed CNOT/CZ entanglers that transiently create a perfect record in the nominal no-record arm.
+- **What differs:** The 2019 device/fidelity is not a PSF-ready platform, the calibrated gate still has additional Hamiltonian/error terms, and cross-resonance drive/control modes can themselves carry hidden information. The paper neither studies redundant records nor guarantees pathwise `V(t)=1` for a PSF calibration state.
+- **Novelty threat:** none.
+- **Useful contribution:** Establishes historical experimental feasibility of direct `ZX` Hamiltonian control and Hamiltonian-tomographic calibration, supporting the specific design repair identified by RT-2026-009: choose a native/analog interaction path whose common-eigenstate arm can in principle remain record-null continuously, then audit the actual extra terms and hidden modes.
+- **Reopen if:** a modern superconducting implementation with substantially better direct `ZX` control is selected for the concrete PSF platform model.
+- **Sources:** https://arxiv.org/abs/1905.05670 ; https://doi.org/10.1103/PhysRevApplied.12.064013
