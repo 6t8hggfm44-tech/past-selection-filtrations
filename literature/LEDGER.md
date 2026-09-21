@@ -262,3 +262,25 @@ No paper is marked as a novelty threat until theorem assumptions and conclusions
 - **Useful contribution:** Establishes historical experimental feasibility of direct `ZX` Hamiltonian control and Hamiltonian-tomographic calibration, supporting the specific design repair identified by RT-2026-009: choose a native/analog interaction path whose common-eigenstate arm can in principle remain record-null continuously, then audit the actual extra terms and hidden modes.
 - **Reopen if:** a modern superconducting implementation with substantially better direct `ZX` control is selected for the concrete PSF platform model.
 - **Sources:** https://arxiv.org/abs/1905.05670 ; https://doi.org/10.1103/PhysRevApplied.12.064013
+
+### L-2026-022 — Sundaresan et al., “Reducing Unitary and Spectator Errors in Cross Resonance with Optimized Rotary Echoes” (2020)
+- **Date assessed:** 2026-09-21
+- **Relevance:** direct historical spectator-nuisance relevance.
+- **PSF claims touched:** N5, P1, RT-2026-009/010.
+- **What overlaps:** Experiments with cross-resonance gates show that residual interactions can entangle the target qubit with target spectators, and Hamiltonian-error-amplifying tomography is used to diagnose the unwanted terms. Optimized target rotary pulses reduce both control-target errors and spectator entanglement. This directly supports the physical premise behind RT-2026-010: a nominal native `ZX` interaction can have branch-conditioned hidden spectator dynamics even when the intended target term is calibrated.
+- **What differs:** The paper optimizes gate fidelity and spectator decoupling; it does not define record overlap, PSF evidence action, a no-record Ramsey arm, or a selector. Its observed spectator errors therefore motivate a device-level hidden-mode model but do not quantify `Sigma_hidden` in PSF terms.
+- **Novelty threat:** none.
+- **Useful contribution:** Makes the spectator hidden-record countermodel experimentally grounded and suggests Hamiltonian-error-amplifying tomography plus rotary cancellation as concrete tools for bounding the relevant conditional spectator generators.
+- **Reopen if:** a selected PSF platform uses echoed cross resonance and can map the measured spectator Hamiltonian coefficients and state-preparation uncertainty into a prospective `V_hidden(t)` / `Sigma_hidden(t)` band.
+- **Sources:** https://doi.org/10.1103/PRXQuantum.1.020318 ; https://arxiv.org/abs/2007.02925
+
+### L-2026-023 — Tango et al., “What Is the Maximum Density of Microwave Control Lines in a Superconducting Quantum Computer?” (2026)
+- **Date assessed:** 2026-09-21
+- **Relevance:** adjacent/direct hardware-crosstalk relevance.
+- **PSF claims touched:** N5, P1, RT-2026-010.
+- **What overlaps:** Combines microwave transmission-line theory with a quantum Hamiltonian model to quantify control-line crosstalk and resulting gate infidelity in fixed-frequency transmons. For a 99.99% target fidelity it reports especially stringent equal-level far-end crosstalk requirements for cross-resonance gates (about `-73 dB`, compared with about `-43 dB` for `R_X`). This reinforces that the physical control network can introduce interaction-dependent hidden drive terms that must be included in a device-level pathwise null rather than inferred from the logical gate label.
+- **What differs:** The reported quantities are wiring crosstalk and gate infidelity, not branch distinguishability or record information. A fidelity specification cannot be substituted for a bound on `Sigma_hidden`; the paper supplies hardware-scale nuisance evidence rather than the required PSF target-prediction certificate.
+- **Novelty threat:** none.
+- **Useful contribution:** Adds a current quantitative hardware reason to include control-line modes and off-target drives in the native-interaction uncertainty model, particularly for cross-resonance implementations.
+- **Reopen if:** a concrete PSF hardware design is chosen and its measured line-to-line crosstalk can be propagated through the branch-conditioned Hamiltonian to a hidden-record bound.
+- **Sources:** https://doi.org/10.1103/m9p9-z6hl
