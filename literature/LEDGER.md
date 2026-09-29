@@ -284,3 +284,37 @@ No paper is marked as a novelty threat until theorem assumptions and conclusions
 - **Useful contribution:** Adds a current quantitative hardware reason to include control-line modes and off-target drives in the native-interaction uncertainty model, particularly for cross-resonance implementations.
 - **Reopen if:** a concrete PSF hardware design is chosen and its measured line-to-line crosstalk can be propagated through the branch-conditioned Hamiltonian to a hidden-record bound.
 - **Sources:** https://doi.org/10.1103/m9p9-z6hl
+
+
+### L-2026-024 — Ward et al., echoed cross-resonance gate error budgeting (2026)
+- **Date assessed:** 2026-09-28
+- **Relevance:** direct hardware/null-model relevance.
+- **PSF claims touched:** N5, P1, RT-2026-011.
+- **What overlaps:** Effective echoed cross-resonance Hamiltonians contain the intended conditional interaction together with additional single- and two-qubit terms; higher-order residual errors can survive echoing through noncommuting Hamiltonian components. This is the concrete hardware setting in which a branch-independent term can rotate a nominal common-eigenstate control out of the blind manifold and create ordinary branch distinguishability.
+- **What differs:** The work is gate-error characterization, not PSF record physics. It does not define PSF visibility/evidence action or selector dynamics, so its measured error terms must be propagated through an explicit branch-overlap model before they can bound a PSF null.
+- **Novelty threat:** none.
+- **Useful contribution:** Motivates measuring the complete scheduled Hamiltonian rather than treating a logical `ZX` label as sufficient, and supplies experimentally relevant coefficients for a future commutator/trajectory calculation.
+- **Reopen if:** a concrete echoed-CR platform is selected and measured Hamiltonian coefficients/uncertainties can be converted into a prospective `Sigma_ordinary(t)` band.
+- **Sources:** literature source assessed in the 2026-09-28 run; preserve exact bibliographic URL when next verified against the public record.
+
+### L-2026-025 — Lasek & Horodecki, environment alignment and redundant record formation (2026)
+- **Date assessed:** 2026-09-28
+- **Relevance:** adjacent/direct record-dynamics relevance.
+- **PSF claims touched:** C3, N5, P1, RT-2026-011.
+- **What overlaps:** In an imperfect conditional-record model, record formation depends on alignment of environmental states with the conditional interaction axis, while additional local dynamics can alter whether distinguishable records form. This independently reinforces the experimental lesson that an initially blind preparation need not remain blind under the full physical Hamiltonian.
+- **What differs:** No PSF filtration, Section 8 calibration-compatible target certificate, echo-selector law, or trajectory-null protocol is supplied.
+- **Novelty threat:** low/none to PSF-specific mathematics; useful as neighboring physical intuition and null-model literature.
+- **Useful contribution:** Supports treating record-nullness as a dynamical property rather than a state-preparation label.
+- **Reopen if:** its model yields a quantitative overlap expression directly usable as a benchmark for the chosen PSF hardware.
+- **Sources:** literature source assessed in the 2026-09-28 run; preserve exact bibliographic URL when next verified against the public record.
+
+### L-2026-026 — Xu, “Emergence of Boolean Facts from Markovian Coarse-Graining in Relational Quantum Causal Processes” (2026)
+- **Date assessed:** 2026-09-28
+- **Relevance:** substantive adjacent operator-algebraic prior art.
+- **PSF claims touched:** N1, N3, P2, P4.
+- **What overlaps:** Uses state-preserving normal UCP coarse-graining, asymptotic/fixed structures and central/Boolean record algebras to describe emergence of stable classical facts. This is genuine neighboring territory for broad claims involving fixed-point algebras, centers and dynamically persistent classical information.
+- **What differs:** The assessed work does not duplicate PSF's ordered cumulative accessible-past filtration, compatible past-state realization, root-fidelity visibility bounds, Section 8 calibration-compatible echo target set, or optional selector program.
+- **Novelty threat:** medium to broad language about operator-algebraic emergence of persistent classical facts; no current theorem-level duplication established.
+- **Useful contribution:** Important comparison target for Section 11/future-fixed-algebra language and for distinguishing the PSF temporal synthesis from fixed-point/Markovian coarse-graining constructions.
+- **Reopen if:** direct theorem-by-theorem comparison reveals equivalence between Xu's asymptotic Boolean/fixed structures and a current PSF Section 11 construction, or if earlier antecedents cited there predate the 2025 PSF preprint.
+- **Sources:** public paper assessed in the 2026-09-28 run; exact URL should be verified and normalized in the next literature-maintenance pass.
