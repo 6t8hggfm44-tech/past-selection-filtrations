@@ -317,4 +317,4 @@ No paper is marked as a novelty threat until theorem assumptions and conclusions
 - **Novelty threat:** medium to broad language about operator-algebraic emergence of persistent classical facts; no current theorem-level duplication established.
 - **Useful contribution:** Important comparison target for Section 11/future-fixed-algebra language and for distinguishing the PSF temporal synthesis from fixed-point/Markovian coarse-graining constructions.
 - **Reopen if:** direct theorem-by-theorem comparison reveals equivalence between Xu's asymptotic Boolean/fixed structures and a current PSF Section 11 construction, or if earlier antecedents cited there predate the 2025 PSF preprint.
-- **Sources:** public paper assessed in the 2026-09-28 run; exact URL should be verified and normalized in the next literature-maintenance pass.
+- **Sources:** https://arxiv.org/abs/2606.22127
