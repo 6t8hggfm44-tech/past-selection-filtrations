@@ -295,7 +295,7 @@ No paper is marked as a novelty threat until theorem assumptions and conclusions
 - **Novelty threat:** none.
 - **Useful contribution:** Motivates measuring the complete scheduled Hamiltonian rather than treating a logical `ZX` label as sufficient, and supplies experimentally relevant coefficients for a future commutator/trajectory calculation.
 - **Reopen if:** a concrete echoed-CR platform is selected and measured Hamiltonian coefficients/uncertainties can be converted into a prospective `Sigma_ordinary(t)` band.
-- **Sources:** literature source assessed in the 2026-09-28 run; preserve exact bibliographic URL when next verified against the public record.
+- **Sources:** https://arxiv.org/abs/2601.20458
 
 ### L-2026-025 — Lasek & Horodecki, environment alignment and redundant record formation (2026)
 - **Date assessed:** 2026-09-28
@@ -306,7 +306,7 @@ No paper is marked as a novelty threat until theorem assumptions and conclusions
 - **Novelty threat:** low/none to PSF-specific mathematics; useful as neighboring physical intuition and null-model literature.
 - **Useful contribution:** Supports treating record-nullness as a dynamical property rather than a state-preparation label.
 - **Reopen if:** its model yields a quantitative overlap expression directly usable as a benchmark for the chosen PSF hardware.
-- **Sources:** literature source assessed in the 2026-09-28 run; preserve exact bibliographic URL when next verified against the public record.
+- **Sources:** https://arxiv.org/abs/2609.20823
 
 ### L-2026-026 — Xu, “Emergence of Boolean Facts from Markovian Coarse-Graining in Relational Quantum Causal Processes” (2026)
 - **Date assessed:** 2026-09-28
@@ -318,3 +318,15 @@ No paper is marked as a novelty threat until theorem assumptions and conclusions
 - **Useful contribution:** Important comparison target for Section 11/future-fixed-algebra language and for distinguishing the PSF temporal synthesis from fixed-point/Markovian coarse-graining constructions.
 - **Reopen if:** direct theorem-by-theorem comparison reveals equivalence between Xu's asymptotic Boolean/fixed structures and a current PSF Section 11 construction, or if earlier antecedents cited there predate the 2025 PSF preprint.
 - **Sources:** https://arxiv.org/abs/2606.22127
+
+
+### L-2026-027 — Zheng et al., “Observation of the transition from reversible to irreversible decoherence of mesoscopic quantum superpositions” / preprint “Emergence of irreversible decoherence from unitary dynamics” (2025/2026)
+- **Date assessed:** 2026-10-05
+- **Relevance:** direct experimental red-team/null relevance; candidate platform relevance.
+- **PSF claims touched:** C3, N5, P1, RT-2026-004.
+- **What overlaps:** Circuit-QED experiment with a photonic cat state coupled to a controllable reservoir of up to eight nonlinear oscillators. In the stated weak-backaction product approximation, the cat coherence multiplier is the product of the branch ground-state amplitudes, while the reservoir stores which-path information. One reservoir qubit exhibits complete decoherence followed by spontaneous revival; increasing the number of reservoir degrees washes out later revivals over the observed window.
+- **What differs:** The experiment remains ordinary global unitary dynamics. Its “irreversible” regime concerns failure of the uncontrolled system-reservoir dynamics to re-synchronize the reservoir and revive coherence, not a demonstrated failure of a deliberately implemented global microscopic inverse. It contains no PSF filtration or selector law.
+- **Novelty threat:** none/low to the PSF filtration mathematics; substantive prior art for broad claims connecting many environmental records, product overlap/coherence loss, and emergent practical irreversibility. The arXiv preprint was submitted 2025-10-17, before the November 2025 PSF preprint, so chronology matters for any broad physical-language claim.
+- **Useful contribution:** Strengthens the standard-unitary null: lack of spontaneous recoherence, even when which-path information becomes distributed over many controllable reservoir degrees, is not evidence for a selector. It also supplies a hardware architecture unusually close to PSF's product-record toy model, but an active sign-reversed/global inverse is not established in this paper.
+- **Reopen if:** the platform can implement a characterized active inverse or controlled Loschmidt echo over the resonator plus reservoir; that would make it a serious candidate for a PSF discriminator rather than only a decoherence/revival benchmark.
+- **Sources:** https://arxiv.org/abs/2510.15730 ; PRL accepted 2026-09-11, DOI https://doi.org/10.1103/t2yx-9bqh
