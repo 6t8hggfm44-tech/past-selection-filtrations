@@ -9,23 +9,23 @@
 
 Ward et al. (arXiv:2601.20458) use the effective cross-resonance Hamiltonian
 
-$
+$$
 H/\hbar=\tfrac12(\Omega_{IX}IX+\Omega_{IY}IY+\Omega_{IZ}IZ+\Omega_{ZI}ZI+
 \Omega_{ZX}ZX+\Omega_{ZY}ZY+\Omega_{ZZ}ZZ).
-$
+$$
 
 Conditioned on control (Z=\pm1), the target Hamiltonians are, up to the branch-dependent scalar (ZI) phase,
 
-$
+$$
 H_\pm/\hbar=\tfrac12(A\pm B),\quad
 A=\mathbf a\cdot\boldsymbol\sigma,\ 
 \mathbf a=(\Omega_{IX},\Omega_{IY},\Omega_{IZ}),
-$
+$$
 
-$
+$$
 B=\mathbf b\cdot\boldsymbol\sigma,\quad
 \mathbf b=(\Omega_{ZX},\Omega_{ZY},\Omega_{ZZ}).
-$
+$$
 
 Ward's block-diagonal model explicitly excludes control leakage, which must remain a separate ordinary channel in a PSF null.
 
@@ -33,31 +33,31 @@ Ward's block-diagonal model explicitly excludes control leakage, which must rema
 
 For a pure target preparation with Bloch vector (\mathbf n), the leading branch-record action is
 
-$
+$$
 \Sigma(t)=-\log V(t)
 =\frac{t^2}{2}\operatorname{Var}_{\mathbf n}(B)+O(t^3)
 =\frac{t^2}{2}\bigl(|\mathbf b|^2-(\mathbf b\cdot\mathbf n)^2\bigr)+O(t^3).
-$
+$$
 
 Therefore a preparation blind to the ideal (ZX) term is not necessarily blind to the full measured conditional interaction. For the nominal (+X) preparation,
 
-$
+$$
 \boxed{\Sigma_{\rm axis}(t)
 =\frac{t^2}{2}(\Omega_{ZY}^2+\Omega_{ZZ}^2)+O(t^3).}
-$
+$$
 
 A Wolfram exact check for (B=bX+dZ), (A=0), and (|+x\rangle) returned
 
-$
+$$
 V(t)^2=1-\frac{d^2}{b^2+d^2}\sin^2(\sqrt{b^2+d^2}\,t)
-$
+$$
 
 and
 
-$
+$$
 \Sigma(t)=\frac{d^2t^2}{2}
 +\frac{d^2(-2b^2+d^2)t^4}{12}+O(t^6),
-$
+$$
 
 confirming the quadratic coefficient.
 
@@ -65,26 +65,26 @@ confirming the quadratic coefficient.
 
 If the target is prepared in an eigenstate of the full (B), the quadratic term vanishes. RT-2026-011 gives
 
-$
+$$
 \Sigma_{\rm common}(t)
 =\frac{t^4}{8}\operatorname{Var}_{\psi_B}(i[A/2,B])+O(t^5).
-$
+$$
 
 For Pauli vectors, (i[A/2,B]=-(\mathbf a\times\mathbf b)\cdot\boldsymbol\sigma), so in a (B)-eigenstate
 
-$
+$$
 \boxed{\Sigma_{\rm common}(t)
 =\frac{t^4}{8}|\mathbf a\times\mathbf b|^2+O(t^5).}
-$
+$$
 
 A separate Wolfram finite-series check at (\mathbf a=(1,2,3)), (\mathbf b=(4,0,0)) returned (\Sigma=26t^4+O(t^6)), matching (|\mathbf a\times\mathbf b|^2/8=26).
 
 Near the ideal (B\simeq\Omega_{ZX}X),
 
-$
+$$
 \Sigma_{\rm common}(t)
 \simeq\frac{t^4\Omega_{ZX}^2}{8}(\Omega_{IY}^2+\Omega_{IZ}^2).
-$
+$$
 
 Thus a common (IX) term parallel to the ideal conditional axis is harmless to this specific branch-record mechanism, while common (IY/IZ) terms are not.
 
