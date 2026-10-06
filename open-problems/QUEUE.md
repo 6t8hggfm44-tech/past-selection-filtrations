@@ -1,6 +1,6 @@
 # Open Problems Queue
 
-Prioritize by scientific importance, vulnerability of the program if unresolved, and tractability. The current paper baseline is 9.0.2 (September 7, 2026). The one-time P0 reconciliation was completed on 2026-09-14 in `research-agent/RECONCILIATION_9_0_2_2026-09-14.md`. Section 10's ordinary interaction must not be confused with an established fundamental selector. Require an all-compatible-model target-prediction certificate before shot-count optimization.
+Prioritize by scientific importance, vulnerability of the program if unresolved, and tractability. Experimental candidates and readiness are tracked separately in `experimental-database/REGISTRY.md`; P1 advances should update that registry when material. The current paper baseline is 9.0.2 (September 7, 2026). The one-time P0 reconciliation was completed on 2026-09-14 in `research-agent/RECONCILIATION_9_0_2_2026-09-14.md`. Section 10's ordinary interaction must not be confused with an established fundamental selector. Require an all-compatible-model target-prediction certificate before shot-count optimization.
 
 | Priority | ID | Problem | Status | Why it matters | Next attack |
 |---:|---|---|---|---|---|
