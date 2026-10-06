@@ -18,8 +18,9 @@ Maintain an adversarial, cumulative scientific assessment of PSF rather than mer
 12. When a central or decision-relevant PSF claim remains insufficiently independently checked, create or advance a claim-level validation in `6t8hggfm44-tech/psf-validation` under its `VALIDATION_PROTOCOL.md` and `CLAIM_SCHEMA.md`. Prefer claims whose resolution could change the manuscript, theory scope, empirical program, or confidence in a major result.
 13. Reconcile material validation verdicts back into the primary repo. `verified` or `corroborated` results strengthen evidence but do not automatically change canonical status; `limited`, `contradicted`, or `not-testable-as-stated` results must be surfaced in the relevant ledger/open problem and considered for the decision log and `PSF_RESEARCH_STATE.md`.
 14. Update ledgers only for material findings.
-15. If the canonical state changes, update `PSF_RESEARCH_STATE.md` and record the reason in the decision log.
-16. Report to the user what changed, what did not, confidence, the current validation verdict where relevant, and the recommended next action.
+15. For material experimental progress, also inspect `experimental-database/REGISTRY.md` and the relevant structured entry. Update readiness, blockers, platform mapping, or paper-pipeline status only when evidence warrants it; do not promote an experiment based on conceptual elegance or hardware fidelity alone.
+16. If the canonical state changes, update `PSF_RESEARCH_STATE.md` and record the reason in the decision log.
+17. Report to the user what changed, what did not, confidence, the current validation verdict where relevant, and the recommended next action.
 
 ## Independent validation companion
 
