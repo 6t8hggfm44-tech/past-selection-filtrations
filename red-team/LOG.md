@@ -120,3 +120,11 @@ The red team is rewarded for finding errors, prior art, hidden assumptions, over
 **Hardware relevance:** Ward et al. explicitly model IX,IY,IZ,ZI,ZX,ZY,ZZ; they calibrate ZY toward zero and identify residual ZZ, IZ, leakage, and unexplained errors. Their EPG values are not record-action bounds and cannot be substituted for Sigma.  
 **Required change:** Calibrate the full conditional axis and preparation alignment before calling the arm no-record. Then bound the common/conditional commutator and separately carry leakage, spectators, control modes, drift and memory. A static effective-Hamiltonian check remains insufficient for the scheduled ECR trajectory.  
 **Next attack:** Obtain a time-resolved/toggling-frame A(t),B(t) model for a realizable scheduled CR/ECR pulse and propagate calibration uncertainty into a pathwise V(t)/Sigma_ordinary(t) band.
+
+
+### RT-2026-013 — Rotating conditional axis contaminates no-record control
+**Target:** EXP-2026-001 / P1 no-record Ramsey preparation.  
+**Method:** exact finite-dimensional ordinary-unitary derivation, Wolfram symbolic verification, and independent time-ordered scipy numerics.  
+**Finding:** For `H±(t)=H0(t)±B(t)/2` and pure common initial `P0`, a control is exactly no-record throughout a time interval iff `[U0(t)† B(t) U0(t),P0]=0` throughout it. In a four-segment `X,Y,-Y,-X` signed conditional schedule, overlap magnitudes are `(1,1,|cos φ|,1,1)` despite an identity endpoint. A smooth rotating conditional axis yields `Σ≈Ω²ω²t⁴/8` from the initially blind `+X` state. A deliberately co-rotating common drive can ideally restore the pathwise null. Full dossier: `experiments/TIME_DEPENDENT_CONDITIONAL_AXIS_NULL_2026-10-12.md`.  
+**Result:** mechanism-null premise further narrowed. Pure, closed, block-diagonal model only; no selector evidence.  
+**Next attack:** use measured scheduled-pulse common and conditional terms and their uncertainty set, plus hidden degrees, to determine whether an actual native calibration arm is pathwise selector-null or quantitatively bounded.
