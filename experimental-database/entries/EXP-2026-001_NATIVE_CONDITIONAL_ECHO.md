@@ -28,7 +28,7 @@
 
 ## Ordinary-null model
 - **Calibration-compatible process family:** start from Section 8-style compatible-set inference for declared local/shared-context channels, then enlarge for device-specific leakage, spectators, joint noise, non-Markovian memory, control modes and drift when calibration permits them.
-- **Leading coherent mimics:** inverse-amplitude mismatch; conditional-axis misalignment; common-drift commutator terms; coherent residual couplings.
+- **Leading coherent mimics:** inverse-amplitude mismatch; conditional-axis misalignment; common-drift commutator terms; time-dependent rotation of the interaction-picture conditional axis; coherent residual couplings.
 - **Leading incoherent mimics:** stochastic gate/channel noise, decoherence during forward/inverse evolution, context-dependent cycle error.
 - **Hidden-record pathways:** transient records created by digital compilation; spectators; leaked levels; control-line modes; branch-conditioned ancillary degrees of freedom.
 - **Leakage / spectator / control-mode risks:** explicit and currently unresolved at the full scheduled-trajectory level.
@@ -39,7 +39,7 @@
 - **Independent nuisance calibration:** common-eigenstate Ramsey/RPE-style calibration for coherent mismatch where physically valid; Hamiltonian tomography for conditional/common axes; CER/CAFE-like contextual error estimates where justified; leakage/spectator characterization.
 - **Selector-parameter calibration, if applicable:** `eta` may not be fit from the held-out target. It must be independently fixed or prospectively calibrated on a disjoint set.
 - **Holdout variables:** interaction strength, record redundancy/fragment number, reversal rounds, or other predeclared conditions chosen to expose higher-order differences between the ordinary family and selector law.
-- **Prospective acceptance criteria:** trajectory-wide ordinary record action in the nominal no-record arm must stay below a declared bound; the complete ordinary target-prediction interval must be narrower than the selector-vs-null separation over the held-out region.
+- **Prospective acceptance criteria:** the interaction-picture conditional generator must possess the declared shared blind eigenspace throughout the nominal no-record interval, or the induced trajectory-wide ordinary record action must stay below a declared bound; the complete ordinary target-prediction interval must be narrower than the selector-vs-null separation over the held-out region.
 - **Target-prediction uncertainty band:** not yet complete.
 - **Power/sample-size analysis:** preliminary weak-record scaling exists, but final shot optimization is deferred until the device-specific identifiability certificate exists.
 
@@ -50,13 +50,15 @@
 - **Estimated readiness rationale:** L3 because the abstract protocol is mapped to real hardware primitives and failure modes, but the scheduled-pulse model and held-out ordinary prediction band are not yet complete.
 
 ## Evidence and derivations
-- **Experiment dossiers:** `experiments/ECHO_DISCRIMINATOR.md`; `ECHO_NOISE_IDENTIFIABILITY_2026-08-17.md`; `ECHO_POWER_CALIBRATION_2026-08-24.md`; `NO_RECORD_RAMSEY_CONTROL_2026-08-31.md`; `COMPILED_PATH_RECORD_AUDIT_2026-09-07.md`; `NATIVE_SPECTATOR_HIDDEN_RECORD_BUDGET_2026-09-21.md`; `COMMON_DRIFT_COMMUTATOR_NULL_2026-09-28.md`; `CROSS_RESONANCE_PAULI_NULL_DIAGNOSTIC_2026-10-05.md`.
+- **Experiment dossiers:** `experiments/ECHO_DISCRIMINATOR.md`; `ECHO_NOISE_IDENTIFIABILITY_2026-08-17.md`; `ECHO_POWER_CALIBRATION_2026-08-24.md`; `NO_RECORD_RAMSEY_CONTROL_2026-08-31.md`; `COMPILED_PATH_RECORD_AUDIT_2026-09-07.md`; `NATIVE_SPECTATOR_HIDDEN_RECORD_BUDGET_2026-09-21.md`; `COMMON_DRIFT_COMMUTATOR_NULL_2026-09-28.md`; `CROSS_RESONANCE_PAULI_NULL_DIAGNOSTIC_2026-10-05.md`; `TIME_DEPENDENT_CONDITIONAL_AXIS_NULL_2026-10-12.md`.
 - **Literature ledger entries:** relevant entries include L-2026-007, 009–023, 024, 027, and any future platform-specific updates.
-- **Red-team entries:** RT-2026-004 through RT-2026-012 where relevant.
+- **Red-team entries:** RT-2026-004 through RT-2026-013 where relevant.
 - **Code/symbolic checks:** multiple finite-dimensional and symbolic checks are recorded in the underlying dossiers.
 
 ## Next decisive step
-Model one real scheduled CR/ECR or tunable-coupler pulse trajectory as time-dependent common and conditional generators, include dominant spectators/leakage/control modes, and propagate the nominal blind preparation through both branches to obtain a calibrated trajectory-wide `Sigma_ordinary(t)` uncertainty envelope. Determine whether any held-out region remains in which the complete ordinary family and selector prediction are prospectively separable.
+Model one real scheduled CR/ECR or tunable-coupler pulse trajectory as time-dependent common and conditional generators; transform the conditional generator into the common-interaction frame and test the shared-eigenspace criterion throughout the pulse; include dominant spectators/leakage/control modes; then propagate the nominal blind preparation through both branches to obtain a calibrated trajectory-wide `Sigma_ordinary(t)` uncertainty envelope. Determine whether any held-out region remains in which the complete ordinary family and selector prediction are prospectively separable.
 
 ## Change log
 - **2026-10-05:** entry created from the accumulated P1 experimental program.
+
+- **2026-10-12:** added exact time-dependent interaction-picture shared-eigenspace criterion and rotating-axis failure mode; readiness remains L3.
