@@ -330,3 +330,33 @@ No paper is marked as a novelty threat until theorem assumptions and conclusions
 - **Useful contribution:** Strengthens the standard-unitary null: lack of spontaneous recoherence, even when which-path information becomes distributed over many controllable reservoir degrees, is not evidence for a selector. It also supplies a hardware architecture unusually close to PSF's product-record toy model, but an active sign-reversed/global inverse is not established in this paper.
 - **Reopen if:** the platform can implement a characterized active inverse or controlled Loschmidt echo over the resonator plus reservoir; that would make it a serious candidate for a PSF discriminator rather than only a decoherence/revival benchmark.
 - **Sources:** https://arxiv.org/abs/2510.15730 ; PRL accepted 2026-09-11, DOI https://doi.org/10.1103/t2yx-9bqh
+
+
+### L-2026-028 — Don, Tran & Ho, “Quantum Darwinism through apparatus-mediated environmental recording” (2026)
+- **Date assessed:** 2026-10-12; arXiv first submitted 2026-10-06.
+- **Relevance:** adjacent/direct to indirect registration, redundant records, apparatus memory and correlated-error robustness.
+- **PSF claims touched:** C3, C8, N1, P5, EXP-2026-005.
+- **What overlaps:** Exactly solved circuit models let an apparatus pass pointer information to environment fragments, including shared bit-flip errors affecting successive records and independent noise on already-created fragments. This is substantively similar physical territory to Section 10's ordinary monitor-mediated registration and to PSF fragmented/correlated record questions.
+- **What differs:** The available public abstract does not establish a PSF-style ordered accessible von Neumann filtration, compatible past alternatives, root-fidelity result, Section 8 target set, or selector; no theorem-level duplication is verified. Full-text comparison still required.
+- **Novelty threat:** to broad apparatus-mediated objective-record descriptions, not yet to the specific PSF theorem set. A 2026 paper cannot by its date alone establish pre-November-2025 priority.
+- **Useful contribution:** explicit shared-apparatus vs independently corrupted-fragment distinction for a future correlated-record benchmark.
+- **Sources:** https://arxiv.org/abs/2610.07568
+
+### L-2026-029 — Siva et al., “Time-Dependent Hamiltonian Reconstruction Using Continuous Weak Measurements” (2023)
+- **Date assessed:** 2026-10-12.
+- **Relevance:** direct experimental-method precedent for P1 and EXP-2026-001/002.
+- **What overlaps:** Experimentally reconstructs time-dependent Hamiltonians on two superconducting transmons with a tunable coupler, with reported 4 ns resolution, including control deviations that endpoint tomography may miss.
+- **What differs:** Gate Hamiltonian tomography, not PSF record/selector testing; measured degrees are limited, and continuous observation may change the underlying dynamics/record trajectory.
+- **Novelty threat:** none to PSF mathematics; existing prior art for the hardware characterization method.
+- **Useful contribution:** a realistic candidate for obtaining scheduled `A(t),B(t)` rather than assuming a constant effective generator. Backaction and context-transfer uncertainty must be modeled.
+- **Sources:** https://doi.org/10.1103/PRXQuantum.4.040324
+
+### L-2026-030 — Renkel, reversible nanoparticle pointer proposal / CSL test (2026)
+- **Date assessed:** 2026-10-12; initial preprint June 2026, revised August 2026.
+- **Relevance:** direct alternative experimental architecture, ordinary-vs-collapse echo fork.
+- **PSF claims touched:** N5, P1, EXP-2026-006.
+- **What overlaps:** Proposes writing distinguishable pointer information onto a mesoscopic nanoparticle and returning the pointer to test for coherence restoration; standard unitary theory predicts restoration under ideal reversal, while a specified objective-collapse (CSL) model yields lasting loss.
+- **What differs:** A theoretical proposal, **not experimental demonstration**; CSL's rate/spatial law is not the PSF selector law. The PSF program still needs its own `Σ/η` specification and full ordinary-noise certificate before claiming a discriminating PSF test.
+- **Novelty threat:** prior art for broad generic measurement/reversal tests of irreversible dynamics, not duplication of the filtration mathematics or selector coefficient.
+- **Useful contribution:** candidate third physical platform for the future experiments paper.
+- **Sources:** https://arxiv.org/abs/2606.22707
