@@ -1,0 +1,35 @@
+{
+  "record_type": "append_only_preservation_receipt",
+  "recorded_at_utc": "2026-10-19T19:54:00Z",
+  "status": "archived_supplied_material_only_no_canonical_integration",
+  "scientific_validation": "not_performed",
+  "ownership": "No active-worker lock was established; additive preservation paths only, with expected-head guarded non-force publication. Domain research ownership unchanged.",
+  "approval": "Pete explicitly approved archiving supplied material and checksum/provenance notes in preservation/2026-10-19 on primary repository main; no research-ledger changes.",
+  "repository": "6t8hggfm44-tech/past-selection-filtrations",
+  "base_commit": "777bb7334d2a7bc6b31553a083e71b3085ff6690",
+  "file": {
+    "path": "preservation/2026-10-19/psf_2026_10_19_staged.zip",
+    "bytes": 10868,
+    "sha256": "5716b8793d73196b8a5376b895e6a01fbafe63dcafed301a1f1fa587214f5481"
+  },
+  "provenance": {
+    "kind": "unchanged_user_supplied_archive",
+    "library_file_id": "libfile_2229be28aa408191959c1ec919f3d76b",
+    "library_version": 0,
+    "backing_file_id": "file_00000000a15c81f5bc03eeb8f7686ad3",
+    "supplied_at_utc": "2026-10-19T19:49:43Z",
+    "earlier_source": "https://chatgpt.com/c/6a959fbf-4440-83ea-a34e-8678d69c54ca?messageId=498c01e7-2a02-4be1-9c23-cfc6500c4f92",
+    "earlier_sandbox_byte_identity": "No earlier archive checksum was available; independent equality to earlier sandbox file is unverified."
+  },
+  "integrity": {
+    "zip_crc": "passed",
+    "manifest_payload_files": 7,
+    "all_declared_lengths_and_sha256": "matched",
+    "unlisted_payload_entries": 0
+  },
+  "limitations": [
+    "No raw computation scripts/logs included in the package.",
+    "Scientific claims not independently validated.",
+    "Archive import instructions are proposals; no ledger, readiness, manuscript, validation, decision-log or Universal changes performed."
+  ]
+}
