@@ -360,3 +360,27 @@ No paper is marked as a novelty threat until theorem assumptions and conclusions
 - **Novelty threat:** prior art for broad generic measurement/reversal tests of irreversible dynamics, not duplication of the filtration mathematics or selector coefficient.
 - **Useful contribution:** candidate third physical platform for the future experiments paper.
 - **Sources:** https://arxiv.org/abs/2606.22707
+
+
+### L-2026-031 — Strasberg, “Redundant Records of the Past: Unifying Quantum Darwinism and Decoherent Histories” (2026)
+
+- **Date assessed:** 2026-10-19; arXiv v1 dated 2026-10-07.
+- **Relevance:** **substantive direct/adjacent** to N1, N2, C1, C3, P2/P5 and broad objectivity-of-past claims, not merely a title match.
+- **PSF source compared:** approved manuscript 9.0.2, especially Sections 2, 5 and 6; Section 11 for scope boundaries.
+- **What overlaps:** Past events are described by projectors at earlier times and propagated conditional history states; local environment projectors read out earlier events. Classical fragment-distribution Bhattacharyya coefficients control distinguishability, with conditional independence yielding product decay and redundancy information-theoretic convergence. The paper derives a link to decoherence-of-histories probability sum rules, extends to correlated fragment records, and treats multiple events at multiple times. These are genuine neighboring questions to PSF's accessible past, quantum record distinguishability, fragmented records, and correlated information.
+- **What differs:** Strasberg's primary BC is classical and measurement-basis-dependent; PSF's root-fidelity visibility is an intrinsic quantum record-state compatibility *envelope*, not generally equal to a fixed-measurement classical BC or observed coherence. Strasberg does not supply PSF's cumulative increasing accessible von Neumann-algebra filtration with compatible record realizations/expected lifts, the specific erasure and Bures-correlation budgets, Section 7 joint-coherence holonomy, Section 8 all-compatible-local-channel target certificate, or optional selector law. Its actual conclusions are convergence of classical MI, decoherent-history probability sum rules and past-record redundancy, not a fundamental selector or residual microscopic echo.
+- **Novelty threat:** substantive overlap with broad language tying locally accessible redundant records to an objective past and history decoherence; **no direct theorem-level duplication of the narrower PSF synthesis established in this pass**. The October 2026 preprint postdates the first November 2025 PSF preprint; comparisons must be claim-specific and chronology-aware.
+- **Useful contribution:** Candidate citation for a future author-approved revision and experimental-paper context; especially a literature comparator for correlated-record bounds, multiple times, QND/cavity environmental records and a distinction between measurable classical data and quantum-root-fidelity envelopes.
+- **Next check:** Map Strasberg's BC bounds/conditions against PSF Section 6 quantum fidelity/correlation bound theorem by theorem; independently check whether a measurement-selection optimization bridges the two quantitatively.
+- **Sources:** https://arxiv.org/abs/2610.09845 ; https://arxiv.org/html/2610.09845v1 (Sections III.1, IV.1, IV.2).
+
+### L-2026-032 — Halliwell, “Somewhere in the Universe: Where Is the Information Stored When Histories Decohere?” (1999)
+
+- **Date assessed:** 2026-10-19.
+- **Source access:** publisher abstract plus preprint abstract assessed; full theorem-by-theorem manuscript not audited in this pass.
+- **Relevance:** direct **historical, pre-2025 conceptual prior art** for information about earlier histories residing in environmental records; N1/P2.
+- **What overlaps:** Discusses the connection between decoherent histories and environmental information storage, including imperfect records for mixed initial states and records of temporally nonlocal Fourier components of a trajectory encoded in oscillator observables at a later time. Thus past records and imperfect access are not new concepts in isolation.
+- **What differs/uncertain:** Abstract evidence does not establish equivalence to the full PSF increasing von Neumann record filtration, compatible branch-record states, expected-lift identity, root-fidelity visibility envelope or specific quantitative bounds. Do not infer theorem overlap from wording alone.
+- **Novelty threat:** strong against any unqualified claim that PSF first recognized quantum environmental records of past histories; unassessed for PSF's narrower theorem-specific mathematical synthesis.
+- **Useful contribution:** Candidate historical citation; read full paper and its descendants before making an originality claim about observer-accessible past states.
+- **Sources:** https://doi.org/10.1103/PhysRevD.60.105031 ; https://arxiv.org/abs/quant-ph/9902008 .
