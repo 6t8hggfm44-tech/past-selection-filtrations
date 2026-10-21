@@ -128,3 +128,17 @@ The red team is rewarded for finding errors, prior art, hidden assumptions, over
 **Finding:** For `H±(t)=H0(t)±B(t)/2` and pure common initial `P0`, a control is exactly no-record throughout a time interval iff `[U0(t)† B(t) U0(t),P0]=0` throughout it. In a four-segment `X,Y,-Y,-X` signed conditional schedule, overlap magnitudes are `(1,1,|cos φ|,1,1)` despite an identity endpoint. A smooth rotating conditional axis yields `Σ≈Ω²ω²t⁴/8` from the initially blind `+X` state. A deliberately co-rotating common drive can ideally restore the pathwise null. Full dossier: `experiments/TIME_DEPENDENT_CONDITIONAL_AXIS_NULL_2026-10-12.md`.  
 **Result:** mechanism-null premise further narrowed. Pure, closed, block-diagonal model only; no selector evidence.  
 **Next attack:** use measured scheduled-pulse common and conditional terms and their uncertainty set, plus hidden degrees, to determine whether an actual native calibration arm is pathwise selector-null or quantitatively bounded.
+
+
+### RT-2026-014 — Partial quantitative rescue of a rotating-axis no-record calibration
+
+**Date:** 2026-10-19.
+**Target:** RT-2026-013/P1 concern that exact shared-eigenspace nulling fails for realistic time-varying conditional controls.
+**Attack:** Replace the binary exact-null question with a *worst-case ordinary record action bound* computable from calibrated time-dependent conditional Hamiltonians.
+**Method:** operator-block decomposition and projective-Hilbert-space path length; analytic rotating-axis comparison, Wolfram series check and finite-dimensional random time-ordered evolutions.
+**Result:** **partial constructive control bound**, ordinary QM. Let B_I=U0†BU0 for H±=H0±B/2 and pure P0=|ψ0><ψ0|. With δ(t)=sqrt(Var_ψ0(B_I(t))) and J=∫δ, the branch angle satisfies arccos V≤J. For J<π/2, V≥cos J and Sigma≤−log cos J. If B_I(0)|ψ0>=b|ψ0>, the leading short-time upper-bound coefficient is t⁴ Var(dot B+i[H0,B])/8, matching the known rotating-axis example.
+**Calibration uncertainty:** valid operator-norm envelopes ε_H,ε_B give δ≤δhat+ε_B+2||Bhat||∫ε_H, permitting one-sided control uncertainty propagation for every modeled pure closed conditional Hamiltonian within those tubes.
+**Disconfirmation attempts:** random 2–4-dimensional time-dependent tests; no numerical violation found within 2e−4 tolerance. Hidden-mode countermodel still defeats any interpretation as a full device null.
+**Required change:** treat this as a tool for a *declared partial physical-null certificate*, not the all-compatible ordinary held-out echo target certificate. Preserve spectator, leakage, multi-time/contextual memory and selector-stage ambiguity. No novelty, manuscript or N5 claim change.
+**Next attack:** use actual time-resolved native gate coefficients with simultaneous uncertainty calibration; enlarge the physical model before target-shot optimization.
+**Dossier:** experiments/TRANSVERSE_ACTION_PATHWISE_BOUND_2026-10-19.md
