@@ -15,7 +15,7 @@
 ## Notes on current ranking
 
 ### EXP-2026-001 — lead candidate
-This is currently the most developed candidate because the repository already contains explicit selector and ordinary-null formulas, calibration-power analysis, a mechanism-null control concept, and multiple red-team attacks. Its weakness is precisely why it remains L3 rather than L4: the device-level scheduled trajectory has not yet been certified. The 2026-10-12 rotating-axis audit further requires a shared eigenstate of the **interaction-picture time-dependent conditional generator** throughout the nominal no-record interval, or a quantitative bound on the resulting record action.
+This is currently the most developed candidate because the repository already contains explicit selector and ordinary-null formulas, calibration-power analysis, a mechanism-null control concept, and multiple red-team attacks. Its weakness is precisely why it remains L3 rather than L4: the device-level scheduled trajectory has not yet been certified. The 2026-10-12 rotating-axis audit further requires a shared eigenstate of the **interaction-picture time-dependent conditional generator** throughout the nominal no-record interval, or a quantitative bound on the resulting record action. The October 19 action bound and **October 26 phase-reference certificate** together allow conditional within-model bounds on both visibility loss and phase bias of an *approximately* blind Ramsey arm. They do **not** replace an all-compatible ordinary-process target certificate. October 2026 measured long-lived environmental TLSs are an additional reason to characterize pulse history and hidden memory.
 
 ### EXP-2026-002 — hardware alternative
 This is deliberately kept separate from EXP-2026-001. A tunable-coupler trajectory may avoid some CR-specific axis and control-line issues, but low leakage or high fidelity is not equivalent to low hidden record action.
@@ -32,6 +32,12 @@ This starts from demonstrated Quantum-Darwinism-style redundant-record generatio
 ## Promotion rule
 
 Do not promote any entry above L3 unless the calibration data define a held-out target-prediction band for the complete justified ordinary process family. Do not promote any entry to L5 merely because the hardware can generate decoherence, redundancy, or apparent irreversibility.
+
+## New physical prior-art pointers (2026-10-26)
+
+- **L-2026-033:** Petitjean and Jacquod (2006) establish the Boltzmann echo as an ordinary partial-reversal baseline when environmental degrees cannot all be inverted.
+- **L-2026-034:** Féchant et al. (October 2026) provide direct superconducting experimental evidence for TLS environments retaining information for more than one second; this is not a PSF observation but informs memory stress tests.
+- **L-2026-035:** Colombo and Pedrozo-Peñafiel's revised cavity-QED time-reversal review points to independently realizable reversal/readout platforms. Additional PSF candidates require a credible record-writing and reversal sequence, not just a review citation.
 
 ## Future expansion targets
 
