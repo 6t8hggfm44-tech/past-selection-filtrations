@@ -47,6 +47,7 @@ print("H0=0 cases:", len(ratios), "maximum ratio:", max(ratios))
 # General piecewise noncommuting H0 and B. Gauss-Legendre quadrature
 # approximates J and phi within each finite-duration constant segment.
 nodes, weights = leggauss(20)
+rng = np.random.default_rng(SEED)  # independent seeded second batch
 ratios = []
 for case in range(150):
     phi = J = 0.0
