@@ -384,3 +384,31 @@ No paper is marked as a novelty threat until theorem assumptions and conclusions
 - **Novelty threat:** strong against any unqualified claim that PSF first recognized quantum environmental records of past histories; unassessed for PSF's narrower theorem-specific mathematical synthesis.
 - **Useful contribution:** Candidate historical citation; read full paper and its descendants before making an originality claim about observer-accessible past states.
 - **Sources:** https://doi.org/10.1103/PhysRevD.60.105031 ; https://arxiv.org/abs/quant-ph/9902008 .
+
+
+### L-2026-033 — Petitjean & Jacquod, “Quantum Reversibility and Echoes in Interacting Systems” (2006)
+- **Date assessed:** 2026-10-26. **Publication:** Physical Review Letters 97, 124103 (September 20, 2006).
+- **Relevance:** strong historical ordinary-QM baseline for partial echo reversals, N5/P1.
+- **What overlaps:** Defines and studies the **Boltzmann echo**, where only a controlled subsystem is time-reversed while other coupled degrees remain uncontrolled. Ordinary decoherence from the unreversed environment can dominate/saturate the echo deficit even as controllable reversal errors are reduced. This is exactly the type of baseline needed before attributing residual echo loss to PSF's optional selector.
+- **What differs:** Semiclassical partial-echo dynamics is not a construction of increasing accessible record von Neumann filtrations, the PSF quantitative joint-state/holonomy results or a selector. It does not duplicate the 9.0.2 Section 8 complete local-channel calibration certificate; it expands the physical-mimic/prior-art context for P1.
+- **Novelty threat:** high to any *broad claim* that persistent coherence loss after an incomplete inverse uniquely indicates new physics; **none established** for the specific PSF filtration mathematics. This literature predates the 2025 PSF preprint and should be evaluated for an experimental-paper citation.
+- **Useful consequence:** When full reversal is impossible, treat uncontrolled environmental coupling as a **first-class ordinary model**, not a small unnamed residual. A favorable target echo cannot outrun a calibrated all-compatible ordinary family merely by improving logical gate fidelity.
+- **Sources:** https://doi.org/10.1103/PhysRevLett.97.124103 ; https://pubmed.ncbi.nlm.nih.gov/17025970/
+
+### L-2026-034 — Féchant et al., “Superconducting circuits host two-level systems with lifetimes exceeding one second” (2026)
+- **Date assessed:** 2026-10-26. **Primary preprint:** arXiv v1 submitted 2026-10-15.
+- **Relevance:** direct superconducting-hardware memory, P1 / EXP-2026-001 and 002.
+- **What overlaps:** Experiments on flux-tunable tantalum transmons identify microscopic environmental two-level systems through quantum-jump correlation spectroscopy, then use a controlled-detuning pump/probe protocol to measure TLS relaxation and return of excitation to the qubit. Two observed TLSs have inferred intrinsic lifetimes exceeding one second, versus device qubit T1 around 100 microseconds; measured couplings are in the kHz range, and the authors explicitly identify retained non-Markovian qubit/environment correlations. The full text reports seconds-scale lifetime from detuning-dependent Purcell analysis, **not** an isolated coherent reversible PSF record-control experiment.
+- **What differs:** Spectroscopy establishes one experimentally relevant retained environmental memory mechanism; it does not measure branch-conditioned PSF record overlap `Sigma`, a selector or a complete ordinary echo target family. Device-specific defects may differ widely.
+- **Novelty threat:** none to PSF mathematical claims; strong **hardware red-team support** for retaining long-lived hidden memory and context-dependent initial states in an ordinary echo null.
+- **Useful contribution:** A concrete calibration target: prepare/pump a candidate hidden TLS, change waiting interval/detuning, and check whether nominally matched echo results depend on history. A successful Markovian fit under only one reset/idle condition cannot validate history-independence.
+- **Sources:** https://arxiv.org/abs/2610.21853 ; https://arxiv.org/html/2610.21853v1
+
+### L-2026-035 — Colombo & Pedrozo-Peñafiel, “Time-Reversal and Reversible Dynamics in Cavity QED for Quantum Metrology” (2026)
+- **Date assessed:** 2026-10-26. **Review submitted:** 2026-07-02; **revised:** 2026-10-19 (arXiv v2).
+- **Relevance:** alternative physical platform for future PSF experimental paper, EXP-2026-003/004 and P1.
+- **What overlaps:** Surveys coherent sign-reversed/time-reversal protocols, scrambling-assisted metrology and interaction-based decoding in cavity QED / many-atom systems, including realized time-reversal metrology. These furnish established reversal and readout primitives distinct from superconducting cross resonance.
+- **What differs:** The work is a review of ordinary coherent control; it does not create a PSF selector discriminator, demonstrate fully inverted microscopic environmental records, or bound complete calibration-compatible ordinary echo processes.
+- **Novelty threat:** none to PSF filtration theorems, important to avoid implying controlled many-body reversal is itself new. Evidence for platform diversity, not a ready-made PSF protocol.
+- **Useful contribution:** Search its cited experiments for a design where deliberate record writing, sufficiently inclusive reversal and held-out nuisance calibration can all occur without relying on inaccessible degrees of freedom.
+- **Sources:** https://arxiv.org/abs/2607.02320 ; https://arxiv.org/abs/2607.02320v2
