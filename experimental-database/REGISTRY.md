@@ -39,6 +39,10 @@ Do not promote any entry above L3 unless the calibration data define a held-out 
 - **L-2026-034:** Féchant et al. (October 2026) provide direct superconducting experimental evidence for TLS environments retaining information for more than one second; this is not a PSF observation but informs memory stress tests.
 - **L-2026-035:** Colombo and Pedrozo-Peñafiel's revised cavity-QED time-reversal review points to independently realizable reversal/readout platforms. Additional PSF candidates require a credible record-writing and reversal sequence, not just a review citation.
 
+## Additional heralded-instrument constraint (2026-11-02)
+
+EXP-2026-001 has a new **ordinary postselection mimic** (RT-2026-016; L-2026-036): success-conditioned partial echoes can locally imitate the optional selector exponent and, at one fixed parameter point, match through fourth order. A declared complete global inverse remains theoretically discriminating, but it may **not** be inferred from postselected runs that exclude herald failures or nonreversed apparatus degrees of freedom. Every candidate using heralds, leakage cuts, no-jump trajectories, or conditional readout must register acceptance counts and calibrate the full complex instrument, not merely selected visibility. See `experiments/HERALDED_FILTER_ECHO_MIMIC_2026-11-02.md`. Readiness unchanged (L3 for the lead), no selector evidence.
+
 ## Future expansion targets
 
 The research agent should actively look for mature experimental precedents in trapped ions, neutral atoms, cavity/circuit QED, photonics, spin ensembles, and other platforms where both **record creation and sufficiently complete reversal** are controllable. Add a new candidate only when the literature supports a concrete architecture, not just a conceptual analogy.
