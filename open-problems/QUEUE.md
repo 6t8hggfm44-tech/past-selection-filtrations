@@ -19,6 +19,12 @@ The October 19 transverse-action bound was **magnitude-only**: within a declared
 
 **Physical ordinary-null controls remain mandatory:** Petitjean–Jacquod's 2006 partial-reversal/Boltzmann echo and Féchant et al.'s October 15, 2026 transmon study of seconds-long hidden TLS memory give concrete precedent for residual ordinary echoes and strongly history-dependent hidden environments. Introduce independently prepared/perturbed TLS and wait/detuning conditions where relevant, and retain ordinary multi-time models surviving calibration. EXP-2026-001 remains L3; do not optimize selector shots without full device-specific identifiability.
 
+## P1 heralded-selection ordinary null (2026-11-02)
+
+A **sixth ordinary-mechanism red-team constraint** applies when echo data are conditioned on accepted/heralded shots or no-jump trajectories. An ordinary environment filter followed by inverse of only the record-writing gate gives `p_success=1-(1-a^2)sin^2(theta)/2`, `C_success=[cos^2(theta)+a e^(i varphi)sin^2(theta)]/p_success`. At `a=sqrt(2)-1` and `eta=6-4sqrt(2)`, this *postselected partial echo* matches the optional selector comparator `(cos theta)^eta` through order `theta^4`, differing only at order `theta^6`. The filter is ordinary QM; full reversal of its dilation and herald restores ideal coherence. **Independent acceptance-rate and complex phase-sensitive instrument calibration are mandatory** if selected outcomes are used; acceptance probability alone does not determine `varphi`, and a trivial no-record arm can be blind to the filter. See `experiments/HERALDED_FILTER_ECHO_MIMIC_2026-11-02.md`, RT-2026-016, L-2026-036. This is an additional conditional-instrument mimic, not a selector disproof or a replacement for device-specific all-compatible-model prediction.
+
+**Next P1 implementation criterion:** Declare whether the measurement is unconditional, postselected or heralded; retain the full outcome/acceptance log, phase-sensitive instrument controls and selection-bias budget *together* with the scheduled-Hamiltonian, spectator, leakage, TLS and context checks. A conditional CPTNI instrument cannot silently inherit Section 8's shared environment-only CPTP-slot identifiability statement.
+
 ## Selection rule
 
 On an unconstrained agent run, work first on the highest-priority problem for which a meaningful increment can be made with available tools. Do not manufacture progress merely to change the file.
