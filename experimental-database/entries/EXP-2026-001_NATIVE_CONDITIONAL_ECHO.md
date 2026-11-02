@@ -22,21 +22,21 @@
 - **Native interaction:** preferably direct or trajectory-engineered conditional `ZX` or `ZZ`-type coupling rather than a logically equivalent compilation that transiently writes uncontrolled records.
 - **Forward protocol:** create controlled record strength over tunable interaction angle and fragment count.
 - **Inverse / recoherence protocol:** pulse-level or otherwise physically characterized inverse, not merely reuse of a logically self-inverse gate label.
-- **Readout:** system Ramsey quadrature / parity visibility, supplemented by calibration observables for coherent and incoherent nuisance directions.
+- **Readout:** system Ramsey quadrature / parity visibility, supplemented by calibration observables for coherent and incoherent nuisance directions. If any herald, no-jump filter or leakage-rejection criterion is used, log both accepted and rejected shots; retain success probabilities and conditional **complex** coherence with calibrated filter phase.
 - **Required controllable degrees of freedom:** system, intended record fragments, dominant spectators/leakage levels, relevant control modes, and timing/context that materially changes the effective channel.
 - **Relevant experimental precedents:** superconducting Quantum Darwinism circuits; cross-resonance Hamiltonian tomography; robust phase estimation; cycle/context calibration; spectator suppression and pulse-inverse work.
 
 ## Ordinary-null model
 - **Calibration-compatible process family:** start from Section 8-style compatible-set inference for declared local/shared-context channels, then enlarge for device-specific leakage, spectators, joint noise, non-Markovian memory, control modes and drift when calibration permits them.
 - **Leading coherent mimics:** inverse-amplitude mismatch; conditional-axis misalignment; common-drift commutator terms; time-dependent rotation of the interaction-picture conditional axis; coherent residual couplings; contamination of the Ramsey *phase* estimator (not only its visibility).
-- **Leading incoherent mimics:** stochastic gate/channel noise, decoherence during forward/inverse evolution, context-dependent cycle error.
+- **Leading incoherent mimics:** stochastic gate/channel noise, decoherence during forward/inverse evolution, context-dependent cycle error; **success-heralded / no-jump filtering and renormalization** when only accepted shots are reported (ordinary CPTNI instrument rather than the unconditional Sec. 8 CPTP slot).
 - **Hidden-record pathways:** transient records created by digital compilation; spectators; leaked levels; control-line modes; branch-conditioned ancillary degrees of freedom.
 - **Leakage / spectator / control-mode risks:** explicit and currently unresolved at the full scheduled-trajectory level.
 - **Memory / non-Markovian risks:** retained-environment correlations can make calibration and target channels differ despite nominally identical gate labels. Féchant et al. (arXiv:2610.21853, October 15, 2026) experimentally report TLS lifetimes exceeding one second in transmon environments; this establishes a real class of long-lived hidden memory but does not prove it affects the proposed device.
 - **Drift/context risks:** calibration must match timing, neighboring operations, pulse schedule and relevant hardware context.
 
 ## Calibration and holdout
-- **Independent nuisance calibration:** common-eigenstate Ramsey/RPE-style calibration for coherent mismatch where physically valid; Hamiltonian tomography for conditional/common axes; CER/CAFE-like contextual error estimates where justified; leakage/spectator characterization.
+- **Independent nuisance calibration:** common-eigenstate Ramsey/RPE-style calibration for coherent mismatch where physically valid; Hamiltonian tomography for conditional/common axes; CER/CAFE-like contextual error estimates where justified; leakage/spectator characterization. **Instrument calibration:** independently measure full herald acceptance (including failure outcomes), control phase-sensitive off-diagonal action, and jointly model acceptance-conditioned complex echo. Simple no-record arms may not expose target-dependent acceptance effects.
 - **Selector-parameter calibration, if applicable:** `eta` may not be fit from the held-out target. It must be independently fixed or prospectively calibrated on a disjoint set.
 - **Holdout variables:** interaction strength, record redundancy/fragment number, reversal rounds, or other predeclared conditions chosen to expose higher-order differences between the ordinary family and selector law.
 - **Prospective acceptance criteria:** the interaction-picture conditional generator must possess the declared shared blind eigenspace throughout the nominal no-record interval, or the induced trajectory-wide ordinary record action must stay below a declared bound. For the phase-sensitive calibration arm, independently predeclare acceptable systematic *phase* bias: within the closed/pure model, a valid `J_star` bounds complex overlap by `|chi−exp(−i phi)|<=cosh(J_star)−1`; this requires separate device-level calibration-transfer checks; the complete ordinary target-prediction interval must be narrower than the selector-vs-null separation over the held-out region.
@@ -50,9 +50,9 @@
 - **Estimated readiness rationale:** L3 because the abstract protocol is mapped to real hardware primitives and failure modes, but the scheduled-pulse model and held-out ordinary prediction band are not yet complete.
 
 ## Evidence and derivations
-- **Experiment dossiers:** `experiments/ECHO_DISCRIMINATOR.md`; `ECHO_NOISE_IDENTIFIABILITY_2026-08-17.md`; `ECHO_POWER_CALIBRATION_2026-08-24.md`; `NO_RECORD_RAMSEY_CONTROL_2026-08-31.md`; `COMPILED_PATH_RECORD_AUDIT_2026-09-07.md`; `NATIVE_SPECTATOR_HIDDEN_RECORD_BUDGET_2026-09-21.md`; `COMMON_DRIFT_COMMUTATOR_NULL_2026-09-28.md`; `CROSS_RESONANCE_PAULI_NULL_DIAGNOSTIC_2026-10-05.md`; `TIME_DEPENDENT_CONDITIONAL_AXIS_NULL_2026-10-12.md`; `TRANSVERSE_ACTION_PATHWISE_BOUND_2026-10-19.md`; `COMPLEX_PHASE_REFERENCE_CERTIFICATE_2026-10-26.md`.
+- **Experiment dossiers:** `experiments/ECHO_DISCRIMINATOR.md`; `ECHO_NOISE_IDENTIFIABILITY_2026-08-17.md`; `ECHO_POWER_CALIBRATION_2026-08-24.md`; `NO_RECORD_RAMSEY_CONTROL_2026-08-31.md`; `COMPILED_PATH_RECORD_AUDIT_2026-09-07.md`; `NATIVE_SPECTATOR_HIDDEN_RECORD_BUDGET_2026-09-21.md`; `COMMON_DRIFT_COMMUTATOR_NULL_2026-09-28.md`; `CROSS_RESONANCE_PAULI_NULL_DIAGNOSTIC_2026-10-05.md`; `TIME_DEPENDENT_CONDITIONAL_AXIS_NULL_2026-10-12.md`; `TRANSVERSE_ACTION_PATHWISE_BOUND_2026-10-19.md`; `COMPLEX_PHASE_REFERENCE_CERTIFICATE_2026-10-26.md`; `HERALDED_FILTER_ECHO_MIMIC_2026-11-02.md`.
 - **Literature ledger entries:** relevant entries include L-2026-007, 009–023, 024, 027, 029, 033 and 034, and any future platform-specific updates.
-- **Red-team entries:** RT-2026-004 through RT-2026-015 where relevant.
+- **Red-team entries:** RT-2026-004 through RT-2026-016 where relevant.
 - **Code/symbolic checks:** multiple finite-dimensional and symbolic checks are recorded in the underlying dossiers.
 
 ## Next decisive step
@@ -66,3 +66,5 @@ Model one real scheduled CR/ECR or tunable-coupler pulse trajectory as time-depe
 - **2026-10-19:** incorporated one-sided transverse-action bound for approximate no-record calibration; readiness remains L3. Strasberg (L-2026-031) is an adjacent records/decoherent-histories comparator, not selector evidence.
 
 - **2026-10-26:** added bounded complex Ramsey phase-reference deviation from transverse action (RT-2026-015), 2006 partial-reversal ordinary prior art, and October 2026 long-lived TLS hardware memory. Status remains L3; no all-compatible-model certificate.
+
+- **2026-11-02:** added ordinary success-conditioned filter echo mimic and all-outcome instrument-calibration requirement (RT-2026-016, L-2026-036); status remains L3.
