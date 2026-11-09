@@ -28,3 +28,10 @@ A **sixth ordinary-mechanism red-team constraint** applies when echo data are co
 ## Selection rule
 
 On an unconstrained agent run, work first on the highest-priority problem for which a meaningful increment can be made with available tools. Do not manufacture progress merely to change the file.
+
+
+## P1 analog-mediated trajectory check (2026-11-09)
+
+**RT-2026-017** shows that a *native analog* geometric-phase gate can leave its mediator perfectly disentangled at the endpoint while creating distinguishable branch-conditioned mediator states during the pulse. For the exact forced-oscillator control `H_I(t)=gS[a e^{-iδt}+a† e^{iδt}]`, closed-loop return at `T=2π/δ` gives `V_sr(T)=1` while `V_sr(t)=exp[-2(s-r)^2(g/δ)^2 sin²(δt/2)]<1` for nontrivial branch pairs at intermediate times. With `S=Z1+Z2`, an entangling phase and intermediate record distinguishability coexist. Gorshkov et al.'s 2025 cavity-mediated gate proposal (accepted October 2026) and the 2003 Leibfried ion experiment provide relevant conventional geometric-control precedents (L-2026-037/038). The derivation and independent checks are in `experiments/ANALOG_MEDIATOR_CLOSED_LOOP_RECORD_AUDIT_2026-11-09.md`.
+
+**Refined P1 gate:** “native/analog,” “closed bus loop,” “low residual cavity population,” and “good logical gate fidelity” are **not** individually sufficient for trajectory-wide mechanism-nullness. In mediator-based candidates, identify the branch-conditioned coherent displacement **throughout** the sequence; also distinguish intermediate unmeasured quantum correlations from leaked/measured records that persist after the pulse. The latter distinction depends on the predeclared physical filtration/interface and unresolved P7 selector timing rule. A closed, lossless standard-QM loop fully recoheres and is not evidence for selector physics. EXP-2026-001 remains L3, and a device-specific all-compatible ordinary prediction certificate is still missing.
