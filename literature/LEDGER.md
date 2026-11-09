@@ -424,3 +424,23 @@ No paper is marked as a novelty threat until theorem assumptions and conclusions
 - **Useful contribution:** motivates logging every herald/failure outcome, distinguishing `C_conditional` from unnormalized/all-shots coherence and constructing the **complete calibration-compatible ordinary instrument** (including effects and success probabilities), not applying the Section 8 unconditional shared-local-CPTP-slot result automatically to a selected subensemble.
 - **Specific P1 application:** `experiments/HERALDED_FILTER_ECHO_MIMIC_2026-11-02.md` gives an elementary ordinary conditional-filter echo with a selector-like power law through fourth order at one fixed parameter point. This is our separate calculation, **not** an experimental result of Lee et al.
 - **Sources:** https://doi.org/10.1103/7w9t-c5xf ; https://arxiv.org/abs/2510.25836 ; https://arxiv.org/html/2510.25836 .
+
+
+### L-2026-037 — Gorshkov et al., “Cavity-mediated cross-cross-resonance gate” (2025/2026)
+- **Date assessed:** 2026-11-09. **Chronology:** arXiv v1 **2025-06-03** (before PSF's November 2025 first preprint); v2 **2026-10-08**; *PRX Quantum* accepted **2026-10-06**. The October 2026 acceptance is not the scientific first-disclosure date.
+- **Source access:** publisher's accepted-paper abstract and dated arXiv metadata; not a claim of full equation-by-equation audit of its 50-page v2.
+- **PSF relevance:** substantive hardware/method overlap for P1, P7 and EXP-2026-001–003; **not** overlapping temporal-filtration, holonomy or target-certificate theorems.
+- **What overlaps:** Proposes an analog, cavity-mediated two-qubit gate whose oscillator phase-space state traces a qubit-state-dependent loop, generating a controlled phase. The proposal directly motivates tracking the **intermediate coherent mediator state** rather than treating closed bus return and high logical-gate fidelity as a trajectory-wide no-record control.
+- **What differs:** Gorshkov et al. do not test a PSF selector, certify a cumulative accessible-record filtration, measure a selector-specific residual, or provide an all-compatible ordinary echo prediction. The exact spin-dependent forced-oscillator countermodel in `experiments/ANALOG_MEDIATOR_CLOSED_LOOP_RECORD_AUDIT_2026-11-09.md` is our **standard textbook illustrative model** of the architectural issue; its coefficients should not be attributed to their full device Hamiltonian.
+- **Novelty threat:** important pre-PSF prior art for generic claims of cavity-mediated analog geometric gates; none identified for PSF's specific mathematical synthesis. Do not conflate a 2026 publication stage with original 2025 source priority.
+- **Experimental consequence:** Require a branch-conditioned mediator path audit, and distinguish ephemeral mid-gate distinguishability from physically escaped persistent records, before calling a calibration arm selector-null. Mediator closure alone is insufficient.
+- **Sources:** https://arxiv.org/abs/2506.03239 ; https://doi.org/10.1103/1nt2-f7gl .
+
+### L-2026-038 — Leibfried et al., “Experimental demonstration of a robust, high-fidelity geometric two ion-qubit phase gate” (2003)
+- **Date assessed:** 2026-11-09. **Publication:** *Nature* **422**, 412–415 (March 27, 2003).
+- **Source access:** Nature/PubMed and NIST primary institutional record abstracts; no claim of complete full-text theorem review.
+- **PSF relevance:** pre-2025 historical **experimental** prior art for conditional coherent mediator displacements used to generate geometric entangling phases; P1/P7 implementation interpretation.
+- **What overlaps:** An implemented geometric two-ion-qubit gate using internal-state-dependent motional coherent displacements. This is concrete physical precedent for an analog mediator that is conditioned on logical branches during a phase-gate sequence.
+- **What differs:** The experiment is an ordinary quantum control demonstration, not a PSF test; an unmeasured intermediate oscillator state does not automatically become a persistent or accessible past record. Its reported gate fidelity cannot be treated as a PSF selector-null guarantee.
+- **Novelty threat:** direct historical priority against presenting spin-dependent geometric phase loops as a new PSF hardware primitive; none established against 9.0.2's particular record-algebra mathematics or selector postulate.
+- **Sources:** https://doi.org/10.1038/nature01492 ; https://www.nist.gov/publications/experimental-demonstration-robust-high-fidelity-geometric-two-ion-qubit-phase-gate .
