@@ -1,6 +1,6 @@
 # PSF Research State
 
-**Status date:** 2026-09-14  
+**Status date:** 2026-11-16  
 **Canonical manuscript basis:** September 7, 2026 manuscript 9.0.2 — [version DOI](https://doi.org/10.5281/zenodo.22647510)  
 **Purpose:** Machine- and human-readable current epistemic state of the Past-Selection Filtrations research program.
 
@@ -90,6 +90,12 @@ The strongest inherited ordinary nulls remain active:
 Section 11 now defines the evidence action `Sigma_t=-log V_t` on a cumulative-access future-fixed filtration and uses a stored pre-inverse value in the conditional selector-echo consequence. This is a clearer phenomenological statement than the inherited July formulation.
 
 It is **not yet a complete selector dynamics**. The inverse protocol is expressly outside the cumulative-access ordering, and the manuscript does not derive how the extra selector degree should react to transient records created and erased during the later physical implementation of that inverse or calibration sequence. The compiled-path finding therefore remains a live foundational question rather than a contradiction of the manuscript. A future completion must either supply a consistent dynamical accumulation/update rule or explicitly justify a designated-stage/endpoint rule.
+
+### 2026-11-16 exact multi-alternative selector consistency boundary
+
+**New conditional P7 result; not a manuscript contradiction.** Section 11 explicitly limits `|<q_h|q_k>|=V_hk^eta` to a predeclared class of **two-path** experiments and already warns that any simultaneous extension requires one positive-semidefinite selector Gram matrix. RT-2026-018 now makes that warning concrete: for valid pure qubit records `|0>,|+>,|1>`, a naive *universal common-Q three-alternative extension* would have selector Gram determinant `1-2^(1-eta)<0` for **every `0<eta<1`**, independently of the selector phases or Hilbert-space dimension. For faithful perturbations with 1% white-noise mixing and eta=1/2, even the phase-maximized determinant is `-0.032860434704...`. By continuity a faithful obstruction persists for sufficiently small mixing at every fixed fractional exponent. The exact argument and Wolfram checks are in `research/SELECTOR_MULTIPATH_GRAM_OBSTRUCTION_2026-11-16.md` and validation companion `PSF-V-2026-002` (**verified conditional mathematical no-go**). The underlying matrix-positivity issue is old mathematical territory (FitzGerald–Horn 1977; L-2026-039); no priority claim is made.
+
+**Scope and implications:** This rules out *that proposed universal joint extension* at eta<1, not the approved manuscript's explicitly pairwise postulate. Physical applicability restrictions, context-dependent selector variables or an altered multipath overlap law may evade the no-go, but need independent specification and global consistency. P7 now requires an explicit jointly PSD overlap kernel and dynamical/no-signalling rules for any multi-alternative completion. C1–C8, N5 (unestablished selector physics), P1's all-compatible ordinary/device-target certificate, experiment readiness and 9.0.2 manuscript status **remain unchanged**. Decision D-2026-010 records the boundary.
 
 ## 6. Current literature update
 
